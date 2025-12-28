@@ -58,6 +58,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	soundenv = 2
 	plane = INDOOR_PLANE
 	converted_type = /area/rogue/outdoors
+	allow_hunting = FALSE
 
 /area/rogue/indoors/banditcamp
 	name = "Bandit Camp"
@@ -353,6 +354,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/towngen.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
+	allow_hunting = FALSE
 
 /area/rogue/outdoors/exposed/town/keep
 	name = "Keep"
@@ -404,6 +406,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	keep_area = TRUE
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/shop
 	name = "Shop"
@@ -415,6 +418,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/outdoors/exposed/shop
 	icon_state = "shop"
 	droning_sound = 'sound/music/area/shop.ogg'
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/physician
 	name = "Physician"
@@ -445,6 +449,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	name = "Bathmaster vault"
 	icon_state = "bathvault"
 	ceiling_protected = TRUE
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/garrison
 	name = "Garrison"
@@ -480,13 +485,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/tavern
 	tavern_area = TRUE
-	
+
 /area/rogue/outdoors/exposed/tavern
 	icon_state = "tavern"
 	droning_sound = 'sound/silence.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	tavern_area = TRUE
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/church
 	name = "church"
@@ -506,6 +512,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = null
 	droning_sound_dawn = 'sound/music/area/churchdawn.ogg'
 	deathsight_message = "a hallowed place, sworn to the Ten"
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/church/chapel
 	icon_state = "chapel"
@@ -586,6 +593,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/dwarf.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/grove
 	name = "grove"
@@ -632,6 +640,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = null
 	converted_type = /area/rogue/indoors/shelter/town/sargoth
 	first_time_text = "SARGOTH"
+	allow_hunting = FALSE
 /area/rogue/indoors/shelter/town/sargoth
 	icon_state = "sargoth"
 	droning_sound = 'sound/music/area/sargoth.ogg'
@@ -652,6 +661,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	soundenv = 17
 	converted_type = /area/rogue/indoors/shelter/town/roofs
 	first_time_text = null
+	allow_hunting = FALSE
 
 /area/rogue/outdoors/town/roofs/keep
 	name = "Keep Rooftops"
@@ -674,6 +684,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	first_time_text = "The Dwarven Quarter"
 	soundenv = 16
 	converted_type = /area/rogue/indoors/shelter/town/dwarf
+	allow_hunting = FALSE
 
 /area/rogue/indoors/shelter/town/dwarf
 	icon_state = "dwarf"
@@ -703,11 +714,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/under/town
+	allow_hunting = FALSE
+
 /area/rogue/outdoors/exposed/under/town
 	icon_state = "town"
 	droning_sound = 'sound/music/area/catacombs.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	allow_hunting = FALSE
 
 /area/rogue/under/town/sewer
 	name = "sewer"
@@ -727,6 +741,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/sewers.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	allow_hunting = FALSE
 
 /area/rogue/under/town/caverogue
 	name = "miningcave (roguetown)"
@@ -778,6 +793,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/catacombs.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	allow_hunting = FALSE
 
 // underworld
 /area/rogue/underworld
@@ -787,13 +803,16 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	first_time_text = "The Forest of Repentence"
+	allow_hunting = FALSE
 
 /area/rogue/underworld/dream
 	name = "dream realm"
 	icon_state = "dream"
 	first_time_text = "Abyssal Dream"
+	allow_hunting = FALSE
 
 /area/rogue/underworld/adventurespawn
 	name = "wayfarer's dream"
 	icon_state = "dream"
 	first_time_text = "A Wayfarer's Dream"
+	allow_hunting = FALSE

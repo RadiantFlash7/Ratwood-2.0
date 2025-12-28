@@ -37,3 +37,19 @@
 	gender = PLURAL
 	icon_state = "bones"
 	icon = 'icons/roguetown/mob/monster/raccoon.dmi'
+
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf/raccoon/lean
+	desc = "An adorable albiet dangerous creacher of The Vale's northern coast, known to steal food from bins or eat small game. This one is half starved."
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1, /obj/item/natural/bone = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1,
+						/obj/item/alch/sinew = 1,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 1,
+						/obj/item/natural/bone = 2)
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 2,
+						/obj/item/natural/hide = 2,
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 1,
+						/obj/item/natural/bone = 2,
+						/obj/item/natural/fur/raccoon = 1)

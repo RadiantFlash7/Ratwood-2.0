@@ -6,11 +6,14 @@
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/under/town
+	allow_hunting = FALSE
+
 /area/rogue/outdoors/exposed/under/town
 	icon_state = "town"
 	droning_sound = 'sound/music/area/catacombs.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	allow_hunting = FALSE
 
 /area/rogue/under/town/sewer
 	name = "sewer"
@@ -30,6 +33,7 @@
 	droning_sound = 'sound/music/area/sewers.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	allow_hunting = FALSE
 
 /area/rogue/under/town/caverogue
 	name = "miningcave (roguetown)"
@@ -75,3 +79,4 @@
 	droning_sound = 'sound/music/area/catacombs.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	allow_hunting = FALSE

@@ -36,3 +36,19 @@
 	gender = PLURAL
 	icon_state = "bones"
 	icon = 'icons/roguetown/mob/monster/bobcat.dmi'
+
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf/bobcat/lean
+	desc = "An adorable albiet hated creacher of the vale's northern coast, hunting livestock and vulnrable people alike. This one seems half-starved."
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1, /obj/item/natural/bone = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1,
+						/obj/item/alch/sinew = 1,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 1,
+						/obj/item/natural/bone = 1)
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 2,
+						/obj/item/natural/hide = 2,
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 1,
+						/obj/item/natural/bone = 2,
+						/obj/item/natural/fur/bobcat = 1)

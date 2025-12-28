@@ -18,18 +18,18 @@
 	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak/wolf = 1, /obj/item/alch/viscera = 1, /obj/item/alch/sinew = 1, /obj/item/natural/bone = 2)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak/wolf = 2,
 						/obj/item/natural/hide = 2,
-						/obj/item/alch/sinew = 2, 
-						/obj/item/alch/bone = 1, 
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1,
 						/obj/item/alch/viscera = 1,
-						/obj/item/natural/fur/wolf = 1, 
+						/obj/item/natural/fur/wolf = 1,
 						/obj/item/natural/bone = 3,
 						/obj/item/natural/head/volf = 1)
 	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak/wolf = 2,
 						/obj/item/natural/hide = 2,
-						/obj/item/alch/sinew = 2, 
-						/obj/item/alch/bone = 1, 
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1,
 						/obj/item/alch/viscera = 1,
-						/obj/item/natural/fur/wolf = 2, 
+						/obj/item/natural/fur/wolf = 2,
 						/obj/item/natural/bone = 4,
 						/obj/item/natural/head/volf = 1)
 	faction = list("wolfs", "zombie")
@@ -44,10 +44,10 @@
 	retreat_distance = 0
 	minimum_distance = 0
 	milkies = FALSE
-	food_type = list(/obj/item/reagent_containers/food/snacks, 
-					//obj/item/bodypart, 
-					//obj/item/organ, 
-					/obj/item/natural/bone, 
+	food_type = list(/obj/item/reagent_containers/food/snacks,
+					//obj/item/bodypart,
+					//obj/item/organ,
+					/obj/item/natural/bone,
 					/obj/item/natural/hide)
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
 	pooptype = null
@@ -66,7 +66,7 @@
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/wolf
 	eat_forever = TRUE
-	
+
 
 //new ai, old ai off
 	AIStatus = AI_OFF
@@ -177,3 +177,21 @@
 
 /datum/intent/simple/bite/volf
 	clickcd = WOLF_ATTACK_SPEED
+
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf/lean	//used for warden horn- Less loot
+	desc = "A snarling beast of mangy fur and yellowed teeth. This one seems rather thin and starving."
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak/wolf = 1, /obj/item/alch/sinew = 1, /obj/item/natural/bone = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak/wolf = 1,
+						/obj/item/alch/sinew = 1,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 1,
+						/obj/item/natural/bone = 1,
+						/obj/item/natural/head/volf = 1)
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak/wolf = 2,
+						/obj/item/natural/hide = 1,
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 1,
+						/obj/item/natural/fur/wolf = 1,
+						/obj/item/natural/bone = 4,
+						/obj/item/natural/head/volf = 1)

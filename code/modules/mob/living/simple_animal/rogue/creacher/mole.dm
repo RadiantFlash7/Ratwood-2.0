@@ -16,17 +16,17 @@
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 3,
 						/obj/item/natural/hide = 2,
 						/obj/item/natural/fur = 1,
-						/obj/item/natural/bone = 3, 
-						/obj/item/alch/sinew = 3, 
-						/obj/item/alch/bone = 1, 
+						/obj/item/natural/bone = 3,
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
 						/obj/item/alch/viscera = 1,
 						/obj/item/natural/head/mole = 1)
 	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 5,
 						/obj/item/natural/hide = 3,
 						/obj/item/natural/fur = 2,
-						/obj/item/natural/bone = 3, 
-						/obj/item/alch/sinew = 3, 
-						/obj/item/alch/bone = 1, 
+						/obj/item/natural/bone = 3,
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
 						/obj/item/alch/viscera = 1,
 						/obj/item/natural/head/mole = 1)
 	faction = list("wolfs")
@@ -41,8 +41,8 @@
 	retreat_distance = 0
 	minimum_distance = 0
 	milkies = FALSE
-	food_type = list(/obj/item/reagent_containers/food/snacks/rogue/meat, 
-	//obj/item/bodypart, 
+	food_type = list(/obj/item/reagent_containers/food/snacks/rogue/meat,
+	//obj/item/bodypart,
 	//obj/item/organ
 	)
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
@@ -60,7 +60,7 @@
 	aggressive = 1
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/mole
-	
+
 
 //new ai, old ai off
 	AIStatus = AI_OFF
@@ -156,3 +156,21 @@
 
 /datum/intent/simple/claw/mole
 	clickcd = MOLE_ATTACK_SPEED
+
+/mob/living/simple_animal/hostile/retaliate/rogue/mole/lean
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 2,
+						/obj/item/natural/hide = 1,
+						/obj/item/natural/bone = 2,
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 1,
+						/obj/item/natural/head/mole = 1)
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 3,
+						/obj/item/natural/hide = 2,
+						/obj/item/natural/fur = 1,
+						/obj/item/natural/bone = 3,
+						/obj/item/alch/sinew = 3,
+						/obj/item/alch/bone = 1,
+						/obj/item/alch/viscera = 1,
+						/obj/item/natural/head/mole = 1)

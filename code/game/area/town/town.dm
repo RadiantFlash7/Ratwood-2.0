@@ -22,6 +22,7 @@
 	droning_sound = 'sound/music/area/towngen.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
+	allow_hunting = FALSE
 
 /area/rogue/outdoors/exposed/town/keep
 	name = "Keep"
@@ -30,6 +31,7 @@
 	keep_area = TRUE
 	town_area = TRUE
 	detail_text = DETAIL_TEXT_KEEP
+	allow_hunting = FALSE
 
 /area/rogue/outdoors/exposed/town/keep/unbuildable
 	name = "Keep unbuildable"
@@ -54,6 +56,7 @@
 	droning_sound_dusk = null
 	droning_sound_night = null
 	keep_area = TRUE
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/magician
 	name = "University of The Vale"
@@ -75,6 +78,7 @@
 	droning_sound_night = null
 	keep_area = TRUE
 	detail_text = DETAIL_TEXT_UNIVERSITY_OF_AZURIA
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/shop
 	name = "Shop"
@@ -87,6 +91,7 @@
 /area/rogue/outdoors/exposed/shop
 	icon_state = "shop"
 	droning_sound = 'sound/music/area/shop.ogg'
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/steward
 	name = "Steward"
@@ -113,6 +118,7 @@
 /area/rogue/outdoors/exposed/bath
 	icon_state = "bath"
 	droning_sound = 'sound/music/area/bath.ogg'
+	allow_hunting = FALSE
 
 /area/rogue/outdoors/exposed/bath/vault
 	name = "Bathmaster vault"
@@ -159,6 +165,7 @@
 	droning_sound_dusk = null
 	droning_sound_night = null
 	tavern_area = TRUE
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/church
 	name = "church"
@@ -178,6 +185,7 @@
 	droning_sound_night = null
 	droning_sound_dawn = 'sound/music/area/churchdawn.ogg'
 	deathsight_message = "a hallowed place, sworn to the Ten"
+	allow_hunting = FALSE
 
 /area/rogue/indoors/town/church/chapel
 	icon_state = "chapel"
@@ -204,6 +212,7 @@
 	icon_state = "chapel"
 	first_time_text = "THE OTAVAN INQUISITION"
 	detail_text = DETAIL_TEXT_INQUISITION_HQ
+	allow_hunting = FALSE
 
 /area/rogue/indoors/inq/office
 	name = "The Inquisitor's Office"
@@ -246,3 +255,4 @@
 	droning_sound = 'sound/music/area/dwarf.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	allow_hunting = FALSE
