@@ -2118,22 +2118,29 @@
 		// RW animaltracking start
 		if(ishuman(src))
 			var/mob/living/carbon/human/H = src
-			if(H.get_skill_level(/datum/skill/misc/tracking) >= SKILL_LEVEL_JOURNEYMAN)
-				if(H.can_hunt_in_turf(get_turf(H))) // Must be wilderness
-					if(!H.current_hunt)
-						// Prevent spam
-						if(world.time < H.last_hunt_attempt + 30 SECONDS)
-							return
-						H.last_hunt_attempt = world.time
 
-						var/found_existing = FALSE
-						for(var/obj/effect/track/T in orange(5, H))
-							if(istype(T, /obj/effect/track/animal))
-								found_existing = TRUE
-								break
+			if(H.get_skill_level(/datum/skill/misc/tracking) < SKILL_LEVEL_JOURNEYMAN)
+				return
 
-						if(!found_existing)
-							try_start_animal_hunt(H)
+			if(!can_hunt_in_turf(get_turf(H)))
+				return
+
+			// Cooldown still belongs to the mob
+			var/datum/hunt_instance/HUNT = get_active_hunt_for(H)
+			if(HUNT && world.time < HUNT.last_attempt + 30 SECONDS)
+				return
+			HUNT.last_attempt = world.time
+
+			// Already hunting?
+			if(get_active_hunt_for(H))
+				return
+
+			// Avoid spawning over another hunt's trail
+			for(var/obj/effect/track/animal/T in orange(5, H))
+				if(T.hunt)
+					return
+
+			H.try_start_animal_hunt()
 
 /proc/found_ping(atom/A, client/C, state)
 	if(!A || !C || !state)

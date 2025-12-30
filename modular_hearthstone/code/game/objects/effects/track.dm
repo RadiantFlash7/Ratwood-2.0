@@ -522,6 +522,14 @@
 	return
 
 
+GLOBAL_LIST_INIT(active_hunts, list())
+
+/proc/get_active_hunt_for(mob/living/carbon/human/H)
+	for(var/datum/hunt_instance/HUNT in GLOB.active_hunts)
+		if(HUNT.tracker == H && HUNT.active_track)
+			return HUNT
+	return null
+
 //Hunting related tracking below
 
 /datum/hunt_instance
@@ -533,15 +541,28 @@
 	var/started = FALSE
 	var/is_abnormal = FALSE
 	var/active_track // the most recent track object
+	var/last_attempt = 0
 
 /datum/hunt_instance/New(mob/living/carbon/human/H, animal_type)
 	tracker = H
 	src.animal_type = animal_type
 	max_steps = rand(4,5)
 	is_abnormal = HAS_TRAIT(H, TRAIT_VETERANHUNTER)
+	GLOB.active_hunts += src
 
-/mob/living/carbon/human/proc/try_start_animal_hunt(mob/living/carbon/human/H)
-	// Soft chance, scales well with skill
+/datum/hunt_instance/proc/end_hunt(message)
+	if(tracker)
+		to_chat(tracker, span_warning(message))
+
+	GLOB.active_hunts -= src
+	tracker = null
+	active_track = null
+	qdel(src)
+
+/mob/living/carbon/human/proc/try_start_animal_hunt()
+	var/mob/living/carbon/human/H = src
+
+	// Soft chance, scales with skill
 	var/chance = 10 + (H.get_skill_level(/datum/skill/misc/tracking) * 15)
 
 	if(!prob(chance))
@@ -551,27 +572,36 @@
 	var/list/animals = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/saiga,
 		/mob/living/simple_animal/hostile/retaliate/rogue/goat,
-
-		/mob/living/simple_animal/hostile/retaliate/rogue/direbear
+		/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
+		/mob/living/simple_animal/hostile/retaliate/rogue/swine
 	)
 
 	var/datum/hunt_instance/HUNT = new(H, pick(animals))
-	H.current_hunt = HUNT
 
 	to_chat(H, span_info("You notice signs of animal movement nearby..."))
 
-	create_initial_hunt_track(HUNT, get_turf(H))
+	HUNT.create_initial_hunt_track(get_turf(H))
 
 /obj/effect/track/animal
 	name = "animal tracks"
 	markable = FALSE
 	track_type = "animal tracks"
 	ambiguous_track_type = "beast tracks"
+	real_icon_state = "animaltracks"
 	var/datum/hunt_instance/hunt// Hunt linkage
 	var/hunt_step = 0
 	// Animal-specific tuning
 	base_diff = 9          // Easier than humanoids
 	tracking_modifier = -2 // Wilderness advantage
+	invisibility = INVISIBILITY_MAXIMUM
+	alpha = 0
+
+/obj/effect/track/animal/proc/reveal_to(mob/living/carbon/human/H)
+	if(!(H in known_by))
+		known_by += H
+
+	invisibility = 0
+	alpha = 255
 
 /obj/effect/track/animal/handle_creation(mob/living/track_source)
 	creation_time = world.time
@@ -634,8 +664,7 @@
 /obj/effect/track/animal/proc/advance_hunt(mob/living/carbon/human/H)
 	if(hunt_step >= hunt.max_steps)
 		spawn_hunted_animal()
-		hunt.active_track = null
-		hunt = null
+		hunt.end_hunt("The trail ends here.")
 		return
 	hunt.spawn_next_hunt_track(src)
 	qdel(src)
@@ -644,12 +673,11 @@
 	var/step_distance = 6
 	var/angle_offset = rand(-30, 30) // mimic natural pathing
 
-
-	var/dir_angle = get_angle_from_dir(dir) + angle_offset	// Convert direction to angle and calculate target coords
+	var/dir_angle = dir_to_angle(dir) + angle_offset
 	var/dx = round(step_distance * cos(dir_angle))
 	var/dy = round(step_distance * sin(dir_angle))
 
-	var/turf/T = locate(/turf, origin.x + dx, origin.y + dy)
+	var/turf/T = locate(origin.x + dx, origin.y + dy, origin.z)
 
 	if(T && can_hunt_in_turf(T) && !is_obstructed(T))	// Ensure the turf exists, can be hunted, and is free of obstructions
 		return T
@@ -657,10 +685,11 @@
 	// If blocked, try orthogonal directions
 	var/list/orth_dirs = list(turn(dir, 90), turn(dir, -90))
 	for(var/orth_dir in orth_dirs)
-		var/orth_angle = get_angle_from_dir(orth_dir) + angle_offset
-		var/ox = round(step_distance * cos(orth_angle))
-		var/oy = round(step_distance * sin(orth_angle))
-		var/turf/O = locate(/turf, origin.x + dx, origin.y + dy)
+		var/oa = dir_to_angle(orth_dir) + angle_offset
+		var/odx = round(step_distance * cos(oa))
+		var/ody = round(step_distance * sin(oa))
+
+		var/turf/O = locate(origin.x + odx, origin.y + ody, origin.z)
 		if(O && can_hunt_in_turf(O) && !is_obstructed(O))
 			return O
 	return null
@@ -688,6 +717,7 @@
 	new_track.hunt_step = old.hunt_step + 1
 	new_track.original_dir = old.original_dir
 	new_track.facing = dir2text(old.original_dir)
+	new_track.reveal_to(H.tracker)
 	H.active_track = new_track
 	H.current_step = new_track.hunt_step
 	H.last_turf = next
@@ -701,21 +731,32 @@
 		to_chat(H, span_warning("The tracks fade as signs of civilization take over. The animal must have fled elsewhere."))
 	hunt = null
 
-/datum/hunt_instance/proc/create_initial_hunt_track(datum/hunt_instance/H, turf/T)
+/datum/hunt_instance/proc/create_initial_hunt_track(turf/T)
 	if(!can_hunt_in_turf(T))
 		return
 	var/obj/effect/track/animal/tracked = new(T)
-	tracked.hunt = H
+	tracked.hunt = src
 	tracked.hunt_step = 1
-	tracked.facing = pick("north","south","east","west")
+	tracked.original_dir = pick(NORTH, SOUTH, EAST, WEST)
+	tracked.facing = dir2text(tracked.original_dir)
+	tracked.reveal_to(tracker)
 
-	H.last_turf = T
+	active_track = tracked
+	last_turf = T
+	current_step = 1
 
 /proc/can_hunt_in_turf(turf/T)
 	var/area/A = T.loc
 	if(!A || !A.allow_hunting)
 		return FALSE
 	return TRUE
+
+/datum/hunt_instance/proc/apply_bonus_loot(list/butcher_list, list/bonus)
+	if(!bonus)
+		return
+
+	for(var/path in bonus)
+		butcher_list[path] = (butcher_list[path] || 0) + bonus[path]
 
 /obj/effect/track/animal/proc/spawn_hunted_animal()
 	if(!hunt)
@@ -730,10 +771,23 @@
 	if(hunt.is_abnormal)
 		A.name = "abnormally large [A.name]"
 		A.maxHealth *= 2
-		A.loot_multiplier = 2
+		A.Health *= 2
+		apply_bonus_loot(A.butcher_results, hunt_bonus)
 
 	if(hunt.tracker)
 		to_chat(hunt.tracker, span_danger("The trail ends here the animal is close!"))
+
+/proc/dir_to_angle(dir)
+	switch(dir)
+		if(NORTH) return 90
+		if(SOUTH) return 270
+		if(EAST)  return 0
+		if(WEST)  return 180
+		if(NORTHEAST) return 45
+		if(NORTHWEST) return 135
+		if(SOUTHEAST) return 315
+		if(SOUTHWEST) return 225
+	return 0
 
 #undef ANALYSIS_TERRIBLE
 #undef ANALYSIS_BAD
