@@ -36,6 +36,22 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	social_rank = SOCIAL_RANK_ROYAL
 	// Can't use the Throat when you can't talk properly or.. at all for that matter.
 	vice_restrictions = list(/datum/charflaw/mute, /datum/charflaw/unintelligible)
+	allowed_patrons = list(\
+	/datum/patron/divine/astrata,\
+	/datum/patron/divine/noc,\
+	/datum/patron/divine/dendor,\
+	/datum/patron/divine/abyssor,\
+	/datum/patron/divine/ravox,\
+	/datum/patron/divine/necra,\
+	/datum/patron/divine/xylix,\
+	/datum/patron/divine/pestra,\
+	/datum/patron/divine/malum,\
+	/datum/patron/divine/eora,\
+	/datum/patron/inhumen/zizo,\
+	/datum/patron/inhumen/matthios,\
+	/datum/patron/inhumen/baotha,\
+	/datum/patron/inhumen/graggar\
+) //combining defines into a list like this didn't work for some raisin so...
 
 	job_subclasses = list(
 		/datum/advclass/lord/warrior,
