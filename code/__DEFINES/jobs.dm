@@ -342,7 +342,10 @@
 	/datum/job/roguetown/servant,\
 	/datum/job/roguetown/butler,\
 	/datum/job/roguetown/apothecary,\
-	/datum/job/roguetown/magician
+	/datum/job/roguetown/magician,\
+	/datum/job/roguetown/dtmagician,\
+	/datum/job/roguetown/headslave,\
+	/datum/job/roguetown/slave,\
 
 #define NOBLE_ROLES \
 	/datum/job/roguetown/prince,\
@@ -354,7 +357,12 @@
 	/datum/job/roguetown/knight,\
 	/datum/job/roguetown/lady,\
 	/datum/job/roguetown/lord,\
-	/datum/job/roguetown/steward
+	/datum/job/roguetown/steward,\
+	/datum/job/roguetown/sultan,\
+	/datum/job/roguetown/dtprince,\
+	/datum/job/roguetown/cataphract,\
+	/datum/job/roguetown/vizier,\
+	/datum/job/roguetown/sheikh,\
 
 #define KING_QUEEN_ROLES \
 	/datum/job/roguetown/lady,\
@@ -369,6 +377,7 @@
 
 #define PEASANT_ROLES \
 	/datum/job/roguetown/villager,\
+	/datum/job/roguetown/dtvillager,\
 	/datum/job/roguetown/nightmaiden,\
 	/datum/job/roguetown/beggar,\
 	/datum/job/roguetown/cook,\
@@ -411,7 +420,10 @@
 	/datum/job/roguetown/manorguard,\
 	/datum/job/roguetown/sheriff,\
 	/datum/job/roguetown/squire,\
-	/datum/job/roguetown/guardsman
+	/datum/job/roguetown/guardsman,\
+	/datum/job/roguetown/mamluk,\
+	/datum/job/roguetown/janissary,\
+	/datum/job/roguetown/slavemaster,\
 
 #define INQUISITION_ROLES \
 	/datum/job/roguetown/puritan,\

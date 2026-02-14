@@ -117,6 +117,8 @@
 /obj/structure/curtain/black
 	color = "#414143"
 
+/obj/structure/curtain/drab
+	color = "#a68250"
 //This is awful and I apologise.
 /obj/structure/curtain/directional/red
 	color = "#a32121"

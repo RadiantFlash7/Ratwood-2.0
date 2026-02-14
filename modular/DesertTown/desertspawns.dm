@@ -1,0 +1,39 @@
+
+/obj/effect/landmark/start/dt
+	name = "Default"
+	icon_state = "arrow"
+
+
+/obj/effect/landmark/start/dt/janissaryagha
+	name = "Janissary Agha"
+/obj/effect/landmark/start/dt/janissary
+	name = "Janissary"
+/obj/effect/landmark/start/dt/cataphract
+	name = "Cataphract"
+/obj/effect/landmark/start/dt/mamluk
+	name = "Mamluk"
+
+/obj/effect/landmark/start/dt/slavemaster
+	name = "Slave master"
+
+/obj/effect/landmark/start/dt/sheikh
+	name = "Sheikh"
+/obj/effect/landmark/start/dt/vizier
+	name = "Vizier"
+/obj/effect/landmark/start/dt/prince
+	name = "prince"
+/obj/effect/landmark/start/dt/sultan
+	name = "Sultan"
+/obj/effect/landmark/start/dt/dtmagician
+	name = "Palace Magician"
+/obj/effect/landmark/start/dt/slave
+	name = "Palace Slave"
+/obj/effect/landmark/start/dt/headslave
+	name = "Head Slave"
+/obj/effect/landmark/start/dt/dttowner
+	name = "Villager"
+/obj/effect/landmark/start/dt/courtslave
+	name = "Enslaved Adventurer"
+
+// /obj/effect/landmark/start/
+// 	name = ""

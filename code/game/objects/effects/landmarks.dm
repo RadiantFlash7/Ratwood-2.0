@@ -30,6 +30,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	var/list/jobspawn_override = list()
 	var/delete_after_roundstart = TRUE
 	var/used = FALSE
+	var/map = null
 
 /obj/effect/landmark/start/proc/after_round_start()
 	if(delete_after_roundstart)
@@ -43,6 +44,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 				GLOB.jobspawn_overrides[X] = list()
 			GLOB.jobspawn_overrides[X] += src
 	. = ..()
+	if(src.map && SSmapping && SSmapping.config && SSmapping.config.map_name != src.map)
+		qdel(src)
+		return
 	if(name != "start")
 		tag = "start*[name]"
 
@@ -753,3 +757,47 @@ GLOBAL_LIST_EMPTY(travel_spawn_points)
 		tile.aportalid = travel_id
 		tile.aportalgoesto = travel_goes_to_id
 		tile.required_trait = required_trait
+
+//Alternate spawns for alternate maps
+
+/obj/effect/landmark/start/banditlate_alt
+	name = "Bandit"
+	icon_state = "arrow"
+	jobspawn_override = list("Bandit", "Pirate")
+	delete_after_roundstart = FALSE
+	// map = "Build Your Settlement"
+
+/obj/effect/landmark/start/bandit_alt/Initialize()
+	..()
+	GLOB.bandit_starts_alt += loc
+	return INITIALIZE_HINT_QDEL
+
+
+/obj/effect/landmark/start/vampirelord_alt
+	name = "Vampire Lord"
+	icon_state = "arrow"
+	delete_after_roundstart = FALSE
+	// map = "Build Your Settlement"
+
+/obj/effect/landmark/start/vampirelord_alt/Initialize()
+	. = ..()
+	GLOB.vlord_starts_alt += loc
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/landmark/start/vampirespawn_alt
+	name = "Vampire Spawn"
+	icon_state = "arrow"
+	delete_after_roundstart = FALSE
+	// map = "Build Your Settlement"
+
+/obj/effect/landmark/start/vampirespawn_alt/Initialize()
+	. = ..()
+	GLOB.vspawn_starts_alt += loc
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/landmark/start/vampireknight_alt
+	name = "Death Knight"
+	icon_state = "arrow"
+	jobspawn_override = list("Death Knight")
+	delete_after_roundstart = FALSE
+	// map = "Build Your Settlement"

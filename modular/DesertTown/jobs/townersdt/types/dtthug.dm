@@ -1,0 +1,57 @@
+/datum/advclass/dtthug
+	name = "Thug"
+	tutorial = "Maybe you've never been the smartest person in town, but you've gotten this far - whether by finding odd-jobs around town carting shit for the soilers, being the meathead that somebody needs to stand behind them and look scary, or simply shaking down the weak with the veiled-or-otherwise threat of a clobbering. You might've had some run-ins with the law for petty crimes here and there, but you're tolerated enough to have a home here."
+	allowed_sexes = list(MALE, FEMALE)
+	allowed_races = RACES_ALL_KINDS
+	outfit = /datum/outfit/job/roguetown/adventurer/dtthug
+	subclass_social_rank = SOCIAL_RANK_PEASANT
+	traits_applied = list(TRAIT_HOMESTEAD_EXPERT)
+	cmode_music = 'sound/music/cmode/towner/combat_towner2.ogg'
+	category_tags = list(CTAG_DTTOWNER)
+	subclass_languages = list(/datum/language/thievescant)
+	subclass_stats = list(
+		STATKEY_CON = 3,
+		STATKEY_STR = 2,
+		STATKEY_WIL = 1,
+		STATKEY_INT = -1,
+		STATKEY_SPD = -1
+	)
+	subclass_skills = list(
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/axes = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/labor/mining = SKILL_LEVEL_NOVICE,
+		/datum/skill/labor/lumberjacking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/labor/farming = SKILL_LEVEL_NOVICE,
+		/datum/skill/labor/fishing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/stealing = SKILL_LEVEL_JOURNEYMAN,
+	)
+
+/datum/outfit/job/roguetown/adventurer/dtthug/pre_equip(mob/living/carbon/human/H)
+	..()
+	if(H.mind)
+		var/weapons = list("Knuckles","Cudgel")
+		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+		H.set_blindness(0)
+		switch(weapon_choice)
+			if("Knuckles")
+				beltr = /obj/item/rogueweapon/knuckles/bronzeknuckles
+			if("Cudgel")
+				beltl = /obj/item/rogueweapon/mace/cudgel
+	head = /obj/item/clothing/head/roguetown/roguehood/random
+	belt = /obj/item/storage/belt/rogue/leather
+	shirt = /obj/item/clothing/suit/roguetown/shirt/dress/thawb/random
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/open/random
+	pants = /obj/item/clothing/under/roguetown/tights/random
+	shoes = /obj/item/clothing/shoes/roguetown/shortboots
+	backr = /obj/item/storage/backpack/rogue/satchel
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	gloves = /obj/item/clothing/gloves/roguetown/fingerless
+	neck = /obj/item/storage/belt/rogue/pouch/coins/poor

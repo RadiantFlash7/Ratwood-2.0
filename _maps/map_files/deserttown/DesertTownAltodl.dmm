@@ -1,0 +1,508 @@
+"aj" = (/turf/open/floor/rogue/carpet,/area/rogue/outdoors/banditcamp)
+"aC" = (/obj/structure/roguewindow,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"aF" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"aO" = (/obj/structure/closet/crate/chest{lockid = "bandit"},/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/clothing/neck/roguetown/cursed_collar,/obj/item/clothing/neck/roguetown/cursed_collar,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"aT" = (/obj/structure/stairs/desert{dir = 1},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"bB" = (/obj/item/roguecoin/copper/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"cn" = (/obj/item/natural/rock,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+"cx" = (/obj/effect/spawner/roguemap/stump,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"cI" = (/obj/structure/drape/desert,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"cJ" = (/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"cU" = (/obj/structure/roguemachine/Hoardmaster{pixel_x = -32},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"cW" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/wool,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"cZ" = (/obj/structure/closet/crate/roguecloset,/obj/item/flashlight/flare/torch/metal,/obj/item/flashlight/flare/torch/metal,/obj/item/flashlight/flare/torch/metal,/obj/item/flashlight/flare/torch/metal,/obj/item/flashlight/flare/torch/metal,/obj/item/flashlight/flare/torch/metal,/obj/item/flashlight/flare/torch/metal,/obj/item/flashlight/flare/torch/metal,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"ds" = (/obj/structure/fermentation_keg/sandpot/random,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"dZ" = (/obj/effect/decal/carpet,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"ei" = (/obj/structure/rack/rogue,/obj/item/coveter,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"em" = (/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/desertdeep/safe)
+"eL" = (/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"fs" = (/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"fD" = (/obj/structure/closet/crate/roguecloset/dark,/obj/item/flashlight/flare/torch/metal,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"fE" = (/obj/item/cushion/desert2,/obj/effect/landmark/start/bandit{dir = 4},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"fR" = (/obj/structure/closet/crate/roguecloset/dark,/obj/item/flashlight/flare/torch/metal,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"fU" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/banditcamp)
+"gf" = (/obj/item/cushion/desert2,/obj/effect/landmark/start/bandit,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"gr" = (/obj/structure/roguemachine/mail/r{mailtag = "Freemen"},/obj/structure/table/wood{dir = 9; icon_state = "largetable"},/obj/item/natural/feather,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"gx" = (/obj/item/roguegem,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"gG" = (/obj/structure/mineral_door/bars{locked = 1; lockid = "bandit"},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"gI" = (/obj/structure/chair/freedomchair{color = "#ffc4c2"},/turf/open/floor/rogue/concrete{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"hU" = (/obj/structure/closet/crate/roguecloset{keylock = 1; lockid = "manor"},/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/cup/skull,/obj/item/reagent_containers/glass/cup/skull,/obj/item/reagent_containers/glass/cup/skull,/obj/item/reagent_containers/glass/cup/skull,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"ic" = (/obj/item/roguecoin/silver/pile,/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"in" = (/obj/structure/closet/crate/chest/gold,/obj/item/dildo/gold,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"iM" = (/obj/item/rogueweapon/shield/wood,/obj/structure/rack/rogue,/obj/item/rogueweapon/shield/wood,/obj/item/rogueweapon/shield/wood,/obj/item/rogueweapon/shield/wood,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"jc" = (/obj/structure/stairs/stone{dir = 4; icon = 'modular/DesertTown/icons/stairs.dmi'},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"jg" = (/turf/closed/mineral/random/rogue/high,/area/rogue/outdoors/banditcamp)
+"jl" = (/obj/structure/well,/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
+"jz" = (/obj/structure/mineral_door/wood/deadbolt{dir = 4},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"kl" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"kn" = (/obj/structure/roguewindow,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"ky" = (/turf/closed,/area/rogue)
+"lf" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"lC" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/tile/harem1,/area/rogue/outdoors/banditcamp)
+"lE" = (/obj/structure/winch{name = "Abandoned Fort"; redstone_id = "bandit"; gid = "bandit"},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"lH" = (/obj/structure/fluff/railing/border{dir = 9},/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"lM" = (/obj/machinery/gear_painter,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"mh" = (/obj/machinery/light/rogue/torchholder{dir = 4},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"mK" = (/obj/item/rogueweapon/pick,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"on" = (/obj/structure/fluff/railing/border,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"oI" = (/obj/machinery/light/rogue/torchholder{dir = 4},/obj/item/grown/log/tree,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"oK" = (/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
+"oL" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/structure/fluff/walldeco/med6{pixel_x = -32},/obj/item/reagent_containers/glass/bottle/rogue/healthpot,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"oR" = (/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
+"oT" = (/obj/item/natural/rock/desert,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
+"oV" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/item/roguegem/amethyst,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"oX" = (/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"oZ" = (/obj/item/grown/log/tree/small,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"pi" = (/obj/item/cushion/zybantine,/obj/effect/landmark/start/bandit{dir = 8},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"py" = (/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+"pF" = (/obj/machinery/anvil,/obj/item/rogueweapon/hammer/iron,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"pG" = (/obj/structure/fluff/railing/wood{dir = 1},/obj/structure/fluff/nest,/obj/item/natural/saddle,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"pM" = (/obj/structure/fluff/traveltile/bandit{aportalgoesto = "banditexit"; aportalid = "banditin"},/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
+"qb" = (/obj/structure/table/wood{icon_state = "largetable"},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"qo" = (/obj/structure/closet/crate/chest,/obj/item/rogue/instrument/accord,/obj/item/rogue/instrument/guitar,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"qs" = (/obj/item/roguebin,/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
+"qx" = (/obj/machinery/light/rogue/torchholder/c,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"qJ" = (/turf/closed/wall/mineral/rogue/wooddark,/area/rogue/outdoors/banditcamp)
+"re" = (/obj/structure/table/wood{dir = 9; icon_state = "largetable"},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"rk" = (/obj/structure/rack/rogue,/obj/item/clothing/mask/rogue/ragmask/red,/obj/item/clothing/mask/rogue/ragmask/red,/obj/item/clothing/mask/rogue/ragmask/black,/obj/item/clothing/mask/rogue/ragmask/black,/obj/item/clothing/cloak/raincloak/purple,/obj/item/clothing/cloak/raincloak/purple,/obj/item/clothing/cloak/raincloak/drab,/obj/item/clothing/cloak/raincloak/drab,/obj/item/clothing/cloak/raincloak/drab,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"rp" = (/obj/structure/roguewindow,/obj/structure/drape/desert,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"rA" = (/obj/structure/rack/rogue,/obj/item/clothing/head/roguetown/roguehood/shalal,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"so" = (/obj/structure/stairs/stone{dir = 1; icon = 'modular/DesertTown/icons/stairs.dmi'},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"sq" = (/obj/structure/far_travel,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
+"su" = (/obj/structure/toilet,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"sw" = (/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
+"sL" = (/turf/open/water/pond,/area/rogue/indoors/banditcamp/hoardmaster)
+"sR" = (/obj/structure/stairs/desert{dir = 4},/obj/structure/fluff/railing/border,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+"sT" = (/obj/item/cushion/zybantine,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"tj" = (/turf/closed/mineral/random/rogue,/area/rogue/outdoors/banditcamp)
+"tp" = (/obj/structure/flora/roguegrass/bush/desert,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"tB" = (/obj/structure/chair/stool/rogue,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"tD" = (/obj/structure/fluff/railing/wood{dir = 1},/obj/item/natural/saddle,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"tJ" = (/obj/structure/stairs/desert{dir = 8},/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+"ut" = (/obj/item/natural/rock/desert,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/desertdeep/safe)
+"uv" = (/obj/structure/table/wood{dir = 1; icon_state = "longtable_mid"},/obj/item/roguecoin/gold/pile,/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"ux" = (/obj/item/cushion/desert1,/obj/effect/landmark/start/bandit,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"uD" = (/obj/structure/mineral_door/wood/deadbolt{dir = 4},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"vf" = (/obj/structure/arcyne_wall{desc = "A wall of pure arcyne force. Powerful covetous magic protects the dragon's hoard."; max_integrity = 9999; name = "Wall of Greed"},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"vv" = (/obj/item/grown/log/tree,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"vA" = (/obj/item/roguegem/blue,/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"vQ" = (/obj/structure/closet/crate/roguecloset,/obj/item/clothing/mask/cigarette/rollie/nicotine,/obj/item/clothing/mask/cigarette/rollie/nicotine,/obj/item/clothing/mask/cigarette/rollie/nicotine,/obj/item/clothing/mask/cigarette/rollie/nicotine,/obj/item/clothing/mask/cigarette/rollie/nicotine,/obj/item/storage/roguebag,/obj/item/storage/roguebag,/obj/item/storage/roguebag,/obj/item/storage/roguebag,/obj/item/storage/roguebag,/obj/item/storage/belt/rogue/pouch,/obj/item/storage/belt/rogue/pouch,/obj/item/storage/belt/rogue/pouch,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"wZ" = (/obj/structure/table/wood{dir = 5; icon_state = "largetable"},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"xc" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"xx" = (/turf/open/floor/rogue/twig{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"xN" = (/turf/closed/wall/mineral/rogue/tent{dir = 1},/area/rogue/outdoors/banditcamp)
+"xV" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"xW" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+"yy" = (/obj/machinery/light/rogue/torchholder{dir = 4},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"yz" = (/obj/structure/closet/crate/chest/old_crate,/obj/item/reagent_containers/powder/ozium,/obj/structure/fluff/walldeco/med{pixel_x = -32},/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"yO" = (/obj/structure/stairs/desert{dir = 4},/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+"zi" = (/obj/item/roguebin/water,/obj/structure/fluff/wallclock,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"zq" = (/obj/structure/rack/rogue,/obj/item/clothing/head/roguetown/roguehood/shalal/nomad,/obj/item/clothing/head/roguetown/roguehood/shalal/nomad,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"zv" = (/obj/machinery/light/rogue/torchholder{dir = 4},/obj/structure/table/wood{icon_state = "tablewood3"},/obj/item/roguekey/walls{lockid = "bandit"; name = "old key"; pixel_x = 12},/obj/item/roguekey/walls{lockid = "bandit"; name = "old key"; pixel_y = 3},/obj/item/roguekey/walls{lockid = "bandit"; name = "old key"; pixel_x = -9},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"zD" = (/turf/closed/mineral/random/rogue/med,/area/rogue/outdoors/banditcamp)
+"zF" = (/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"zV" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/indoors/banditcamp/hoardmaster)
+"Ac" = (/obj/structure/mineral_door/swing_door,/obj/structure/fluff/nest{pixel_x = -5; pixel_y = 5},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Ai" = (/obj/structure/table/wood{dir = 1; icon_state = "largetable"},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"Ao" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/wool,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"AB" = (/obj/structure/flora/roguegrass/bush/desert,/obj/structure/flora/roguegrass,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"AH" = (/obj/structure/rack/rogue,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"AL" = (/obj/structure/table/optable,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"AN" = (/obj/item/cushion/desert1,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"AT" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/item/candle/skull/lit,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"Bo" = (/obj/structure/closet/crate/chest/gold,/obj/item/dildo/silver,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"Ch" = (/obj/structure/pillory{lockid = list("bandit")},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"CP" = (/obj/structure/flora/roguegrass/bush/desertshrub,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"CR" = (/obj/structure/sandrock/sandrock1,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/desertdeep/safe)
+"Dp" = (/obj/item/cushion/desert2,/obj/effect/landmark/start/bandit{dir = 8},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"Dt" = (/turf/open/floor/rogue/tile/harem1,/area/rogue/outdoors/banditcamp)
+"Du" = (/turf/closed/mineral/rogue,/area/rogue/outdoors/banditcamp)
+"DZ" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/cloth,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"Ef" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/desertdeep/safe)
+"Eo" = (/turf/open/water/cleanshallow,/area/rogue/outdoors/banditcamp)
+"EI" = (/turf/closed/wall/mineral/rogue/sandstone,/area/rogue/outdoors/banditcamp)
+"Fk" = (/obj/machinery/light/rogue/firebowl/standing,/obj/structure/fluff/statue/knight/r{icon = 'modular/DesertTown/icons/alt/tallstructure.dmi'},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"Fn" = (/obj/effect/spawner/roguemap/stump,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"Fq" = (/obj/item/natural/rock,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"FK" = (/obj/machinery/light/rogue/wallfire/candle,/mob/living/simple_animal/pet/cat/rogue,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"FW" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/pelt,/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Ga" = (/obj/structure/chair/frankenstein/zizo,/turf/open/floor/rogue/deserttile{icon_state = "tilegreyblu"},/area/rogue/outdoors/banditcamp)
+"Gg" = (/obj/structure/flora/roguegrass,/obj/item/reagent_containers/glass/bucket,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"Gk" = (/obj/item/cushion/desert1,/obj/effect/landmark/start/bandit{dir = 4},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"Gq" = (/obj/structure/fermentation_keg/sandpot/random/water,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"Gw" = (/obj/machinery/light/rogue/wallfire/candle/blue,/turf/open/floor/rogue/tile/harem1,/area/rogue/outdoors/banditcamp)
+"GV" = (/obj/structure/stairs/desert{dir = 8},/obj/structure/fluff/railing/border,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+"GW" = (/obj/item/reagent_containers/food/snacks/smallrat,/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
+"Hi" = (/obj/structure/mineral_door/wood/deadbolt{dir = 1},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Hn" = (/obj/item/cushion/zybantine,/obj/effect/landmark/start/bandit,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"HE" = (/obj/item/natural/stone,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"HM" = (/obj/machinery/light/rogue/wallfire/candle/r,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"Ib" = (/turf/closed/wall/mineral/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Ii" = (/obj/structure/table/wood{icon_state = "tablewood1"},/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"It" = (/obj/structure/sandrock/sandrock4,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/desertdeep/safe)
+"Iw" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
+"Ix" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"IB" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
+"IG" = (/obj/effect/decal/cobbleedge{dir = 1; icon_state = "borderfall"; pixel_y = 8},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"IM" = (/obj/machinery/light/rogue/firebowl/standing,/obj/structure/fluff/statue/knight{icon = 'modular/DesertTown/icons/alt/tallstructure.dmi'},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"Jp" = (/obj/item/natural/stone,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+"JN" = (/obj/item/cushion/desert1,/obj/effect/landmark/start/bandit{dir = 8},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"Ka" = (/obj/item/grown/log/tree,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"Kd" = (/obj/structure/table/wood{dir = 6; icon_state = "largetable"},/obj/item/reagent_containers/glass/cup/skull,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"Kr" = (/obj/structure/fermentation_keg/sandpot/random/water,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"KK" = (/obj/structure/flora/roguegrass,/obj/structure/flora/roguegrass/bush/desertshrub,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"Lq" = (/obj/structure/fluff/nest,/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
+"Lu" = (/turf/closed/wall/mineral/rogue/tent{dir = 4},/area/rogue/outdoors/banditcamp)
+"Ly" = (/obj/structure/fluff/railing/border{dir = 10},/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"LM" = (/obj/structure/fermentation_keg/sandpot/random/beer,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"LR" = (/obj/structure/table/wood{dir = 1; icon_state = "longtable"},/obj/item/roguecoin/silver/pile,/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"Mc" = (/obj/item/natural/stone,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"Mi" = (/obj/structure/bed/rogue/shit,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Mn" = (/turf/closed/wall/mineral/rogue/tent,/area/rogue/outdoors/banditcamp)
+"MB" = (/obj/structure/mineral_door/wood/deadbolt{dir = 1},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"ML" = (/obj/structure/stairs/desert{dir = 4},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"Nz" = (/obj/structure/fluff/traveltile/bandit{aportalgoesto = "banditexit2"; aportalid = "banditin2"},/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
+"NK" = (/obj/structure/bars{icon_state = "barsbent"; layer = 2.81},/turf/closed/wall/mineral/rogue/wooddark/window,/area/rogue/outdoors/banditcamp)
+"NN" = (/obj/machinery/light/rogue/hearth{pixel_y = 10},/obj/machinery/light/rogue/oven/south,/obj/item/reagent_containers/glass/bucket/pot,/obj/structure/fluff/railing/border,/turf/open/floor/rogue/concrete,/area/rogue/outdoors/banditcamp)
+"NS" = (/obj/structure/fluff/walldeco/med3,/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/banditcamp)
+"Ob" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/item/rogueweapon/huntingknife/cleaver,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"Oh" = (/obj/structure/stairs/desert,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"Ot" = (/obj/structure/fluff/nest,/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
+"OE" = (/obj/item/grown/log/tree,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"OK" = (/obj/structure/flora/roguegrass/bush/desertshrub,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"ON" = (/obj/item/grown/log/tree,/obj/item/grown/log/tree/small,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"OR" = (/obj/item/roguegem/diamond,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"Pd" = (/obj/structure/stairs/desert{dir = 1},/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"Pe" = (/obj/structure/mineral_door/wood/deadbolt{dir = 1},/turf/open/floor/rogue/carpet,/area/rogue/outdoors/banditcamp)
+"Py" = (/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"PY" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"Qm" = (/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"Qr" = (/obj/structure/roguewindow,/obj/structure/roguewindow,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Qw" = (/obj/structure/flora/roguegrass/bush/desert,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"QD" = (/obj/structure/fluff/nest{pixel_x = -5; pixel_y = 5},/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
+"QH" = (/obj/effect/decal/cobbleedge{icon_state = "borderfall"; dir = 1},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"QJ" = (/turf/open/floor/rogue/deserttile{icon_state = "tilegreyblu"},/area/rogue/outdoors/banditcamp)
+"QK" = (/mob/living/simple_animal/hostile/retaliate/rogue/camel/tame,/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
+"QQ" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/desertdeep/safe)
+"QY" = (/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/desertdeep/safe)
+"Rb" = (/obj/structure/curtain{color = "#ad885c"},/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
+"Re" = (/obj/structure/table/wood{dir = 10; icon_state = "largetable"},/obj/item/reagent_containers/glass/cup/skull,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"Rs" = (/obj/structure/bed/rogue/shit,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"RD" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/desertdeep/safe)
+"RI" = (/obj/structure/flora/roguetree/palm,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp)
+"RT" = (/obj/structure/curtain{color = "#ad885c"},/turf/open/floor/rogue/twig{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"RU" = (/obj/structure/table/wood{dir = 1; icon_state = "largetable"},/obj/item/candle/skull/lit,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"RX" = (/obj/structure/stairs/desert{dir = 1},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Si" = (/obj/item/reagent_containers/glass/bowl,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"Sl" = (/obj/structure/mineral_door/wood/deadbolt{dir = 8},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"Sq" = (/obj/structure/fluff/railing/border{dir = 8},/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
+"SF" = (/turf/closed/wall/mineral/rogue/sandstone,/area/rogue/indoors/banditcamp/hoardmaster)
+"SG" = (/obj/structure/table/wood{dir = 10; icon_state = "largetable"},/obj/item/paper,/obj/item/paper,/obj/item/paper,/obj/item/paper,/obj/item/paper,/obj/item/paper,/obj/item/paper,/obj/item/paper,/obj/item/paper,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"SP" = (/obj/structure/fluff/walldeco/med5,/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/banditcamp)
+"SV" = (/obj/item/grown/log/tree/small,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"SX" = (/turf/open/floor/rogue/dunes,/area/rogue/outdoors/desertdeep/safe)
+"Tf" = (/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/powder/salt,/obj/structure/closet/crate/chest{lockid = "bandit"},/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"Tj" = (/obj/structure/fermentation_keg/sandpot/random/water,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"Tk" = (/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
+"Tm" = (/turf/closed/wall/mineral/rogue/wooddark/window,/area/rogue/outdoors/banditcamp)
+"Tw" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/item/needle,/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"TK" = (/turf/closed/mineral/rogue,/area/rogue/outdoors/desertdeep/safe)
+"TM" = (/obj/structure/fluff/statue/evil{pixel_y = 6},/obj/machinery/light/rogue/firebowl/standing/green{pixel_x = -11; pixel_y = 12},/obj/machinery/light/rogue/firebowl/standing/green{pixel_x = 13; pixel_y = 12},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"TO" = (/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"TY" = (/obj/structure/fluff/nest{pixel_x = -5; pixel_y = 5},/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
+"Uo" = (/obj/structure/roguemachine/bounty{color = "#ffc4c2"},/turf/open/floor/rogue/concrete{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"Uz" = (/obj/structure/mineral_door/swing_door,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"UJ" = (/obj/structure/gate/bars/preopen{gid = "bandit"; name = "Abandoned Fort"; redstone_id = "bandit"},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"Vg" = (/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"VY" = (/obj/structure/fluff/nest,/mob/living/simple_animal/hostile/retaliate/rogue/camel/tame,/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
+"Wl" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"WA" = (/obj/structure/rack/rogue,/obj/item/clothing/head/roguetown/helmet/leather/volfhelm,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"WO" = (/obj/item/reagent_containers/glass/bucket,/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
+"WP" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/cloth,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Xa" = (/obj/structure/roguewindow,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
+"Xw" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/cloth,/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
+"XM" = (/obj/structure/bars,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Ya" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"Yc" = (/obj/structure/flora/roguetree/palm,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"Yz" = (/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"YC" = (/obj/structure/curtain{color = "#ad885c"},/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
+"Zr" = (/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/banditcamp/hoardmaster)
+"ZQ" = (/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
+"ZS" = (/obj/effect/decal/cobbleedge{dir = 1; icon_state = "borderfall"; pixel_y = 8},/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp)
+
+(1,1,1) = {"
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+"}
+(1,1,2) = {"
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgORfUfUfUfUfUfUfUfUfUfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgfUfUfUfUsLsLsLsLfUfUsLfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgfUfUsLsLsLsLzVzVsLsLsLsLsLfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgfUfUfUsLsLZrZrZrZrZrsLsLsLfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgzDzDzDzDzDjgjgsLzVZrZrZrZrZrZrZrsLfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjgzDzDzDzDfDYaPyzDzDjgsLZrZrZrzVZrzVZrZrZrZrfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUjgjgjgjgjgjgjgjgjgzDzDzDzDzDzDzDjgjgjgjgjgzDfRXwIbAoPyWPzDzDjgZrZrzVinoVuvLRBozVZrZrfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUjgjgjgjgjgjgjgzDzDzDzDzDzDzDzDzDzDjgjgjgjgIbPyPyIbIbMBIbIbzDzDZrZrZroXicTkvAbBZrZrsLfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUjgjgjgjgzDzDzDzDzDzDtjtjtjzDzDzDzDIbIbIbIbcWZQSlPyPyIbIbIbIbfUZrSFgxoXoXTkoXzVZrsLfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUjgjgjgjgzDzDzDzDzDtjtjmKtjtjzDzDzDIbKrKrIbIbIbIbPyPyIbFWfDIbIbIbIbEIvfvfvfEIEIsLsLfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUjgjgjgIbIbIbIbIbtjHEPyIbIbIbIbIbIbLMDtGwDtTOIbPyPyuDPyPyIbeiPyIbIMfscUfsFkEIsLsLfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUjgjgjgIbRsYaPyXMPyPyMcPyXMZQWlMiIbdsDtDtDtTOIbPyPyIbPyAoIbeiPyIbfsajajajfsEIsLfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUjgjgjgIbPyPyPygGPyPyPyPygGPySiPyIbIbIbIblCIbIbIbPyIbIbIbIbIbcIIbrAajajajWAEIfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUfUIbMiSiPyXMPyPyZQPyXMPyZQRsIbNNObIxVgFKPyPyPyYaPyPyPyWlPyIbzqajajajAHEIfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUfUIbIbNKIbIbzvPyPyaOIbNKIbIbIbVgVgVgVgVgPyzFHnuxHngfzFPyGqIbEIEIPeEIEIEIfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUfUOEIbpyxWIbNKMBMBNKIbCPRIEoIbTfVgdZVgIiZQfEreRUAiwZJNPyZQMLPyPyPypFEIfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUfUOEIbpypyIbpyQmQmQmcJxcEoEoIbhUVgVgTjIiPyGkReqbqbKdDpPyPyMLPyPyPylMEIfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUoZONZQpyHEQmQmQmQmRIcJEoEoEoIbIbrpXaIbIbPyzFfEsTANpizFZQgrIbEIsoEIEIEIfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUZQZQIbcnZQIbQmQmQmvvxcEoEoEoEoEoEoEoklIbPyPyPyZQPyPyPyPySGIbiMVgVgcZIbfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUoIZQIbQmQmIbOhLyQmQmQwxcEoEoEoEoEoQwxcQraTaTQHQHQHQHRXaTQHIbTOVgVgvQIbfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUZQPyIbQmQmIbChSqQmQmQmcJRICPcJGgRIvvcJknPyZQPyPyPyZQPyPyPyjcVgVgVgrkIbfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUfUSVZQIbZQQmIbPdlHQmZQQmQmFncJcJpyxcFnpyIbqoZQZQZQPyPyPyPyZQIbIbIbIbIbIbfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUZQZQfUIbPyZQIbQmHMIbQmQmPyPyPyQmpypyQmQmQmQmQmIbIbIbIbMBHiIbIbIbIbIbfUfUfUfUfUfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUsuZQRTxxPyPyIbZQQmZQQmQmPyTMPypypypyQmZQQmQmQmlfQmyOZQZQZQZQtJQmxVZQLuzieLDZNSfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUZQZQfUIbZQPyIbQmQmIbQmQmPyPyPypypypypypypyZQQmQmQmsRononononGVQmQmZQYCeLeLTwfUfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUIbPyZQIbQmQmZQQmQmQmpypypypypypypypypyQmQmQmIGZSZSZSZSIGQmQmQmLueLeLDZSPfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUfUIbyyPyjzZQQmIbQmUoQmFqpygIQmQmpypyZQQmQmQmZQpypypyZQQmQmZQQmZQIbMnYCqJfUfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUpyTmPyPyIbQmQmxVZQIbZQIbZQIbZQIbZQIbZQIbQmQmQmZQQmIbZQIbQmIbpyIbIboLeLqxQJQJfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUfUpyIbZQPyIbZQQmQmQmQmQmPYQmPYQmQmQmQmQmPYQmQmQmQmQmPYQmQmZQpypycnaCALeLtBQJGafUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUSXIbIbPyPyIbIbQmZQQmQmZQQmZQQmQmZQQmQmZQQmQmQmQmQmQmQmQmZQpyxWJpDufUyzeLATQJQJfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUSXTmZQPyPyZQIbIbIbtDAcIbpGUzIbtDUzIbIwWOTYIbPyPyPyIbMBIbIbIbDuDuDuqJxNxNxNxNfUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUSXIbPyPyZQPyIbIbIbswswIbswOtIbswQDIbLqjlGWIbPyPyPyIbZQZQYaDuDuDuDuDuDuDuDuDufUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUfUSXIbmhPyPyZQIbIbIbVYqsIbqsQKIbQKqsIboRTYIwIbUJPyPyIblEZQPyIbDuDuDuDuDuDuDuDufUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUSXutTmZQPyZQPyIbIbIbIbIbIbIbIbIbIbIbIbIboRIbIbemememIbIbPyIbIbIbDuDuDuDuDuDuDufUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyfUutSXIbTmIbIbTmIbSXSXSXSXIbIbIbSXSXItSXIbIbIbEfoKoKoKEfIbTmIbItSXDuDuDuDuDuDuDufUfUfUfUkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQSXSXSXSXSXSXSXSXSXCRSXSXSXSXSXSXSXSXSXSXSXSXQYoKoKoKoKSXSXSXSXSXTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQSXSXItSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXoKoKoKoKQYSXSXSXSXSXTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXQYoKoKoKoKQYSXSXSXSXSXSXTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQcxSXSXSXSXCRSXSXSXSXSXSXSXSXSXSXSXSXRDQYoKoKoKoKoKoKSXSXSXoKSXSXSXaFTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQaFYzSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXSXQYoKoKoKoKoKoKQYSXSXSXSXSXcxYztpYzTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQtpYzYzSXSXSXSXSXSXSXSXSXSXSXutSXSXSXoKoKoKoKoKoKQYSXSXSXSXSXYzYzYzaFOKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQaFYzYcSXSXSXSXSXSXSXSXSXSXSXSXSXSXQYoKoKQYQYoKQYSXSXSXSXSXSXABYzYzYzYzTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQYzOKYzaFSXSXSXSXSXSXSXutSXSXSXSXSXQYoKoKoKoKQYRDSXSXSXSXSXYzYzYzYcYzOKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKcxKaSXSXSXSXSXSXSXSXSXItSXTKTKoKoKoKoKoKoKTKTKSXSXSXSXSXYzcxYzKKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKABSXSXSXSXSXSXSXTKTKTKTKTKTKoKoKoKoKoKTKTKTKTKTKSXSXSXKaYzTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKSXSXSXSXTKTKTKTKTKTKTKTKTKoKoKoKoKoKTKTKTKTKTKTKOKaFTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKoKTKTKTKTKTKTKTKTKTKTKTKTKTKoKoKoKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKoKoKoKoKoTTKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKTKRbTKTKTKTKTKTKTKTKTKTKTKTKTKTKoKoKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKTKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKTKoKoKoKIBTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKoKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKoKoKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKoKoKTKTKTKTKIBoToKoKTKTKTKTKTKTKTKTKoKoKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKoKTKTKTKoKoKoKoKoKoKoKoKTKTKTKTKTKoKoKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKoKoKTKoKoKoKoKoKoKoKoKoKoKTKTKTKoKoKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKoKoKoKoKoKTKTKTKTKoKoKoKoKoKoKoKoKoKTKTKTKTKTKTKTKTKoKIBoKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKoKoKoKoKTKTKTKTKTKTKoKoKoKoKoKoKoKTKTKTKTKTKTKTKTKoToKoKoKNzTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKTKoKoKoKTKTKTKTKTKTKTKIBoKoKoKoKoKoKoKoKoKoKoKoKoKoKoKoKoKNzTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKTKoKoKoKoKTKTKTKTKTKTKTKoKoKoToKoKoKoKoKoKoKoKoKoKoKoKoKoKNzTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKoKoKoKoKoKoTTKTKTKTKTKTKoKoKTKTKTKoKoKoTTKTKTKTKTKTKoKIBoKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKIBoKoKoKoKIBTKTKTKTKTKTKoKoKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQTKTKTKTKTKTKpMpMpMTKTKTKTKTKTKTKTKsqsqTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTKQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykyQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQkykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+"}
+(1,1,3) = {"
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+kykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykykyky
+"}

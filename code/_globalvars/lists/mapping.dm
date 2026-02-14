@@ -55,9 +55,13 @@ GLOBAL_LIST_EMPTY(quest_landmarks_list)
 GLOBAL_LIST_EMPTY(wizardstart)
 GLOBAL_LIST_EMPTY(nukeop_start)
 GLOBAL_LIST_EMPTY(bandit_starts)
+GLOBAL_LIST_EMPTY(bandit_starts_alt)		//for maps with unique bandit areas
 GLOBAL_LIST_EMPTY(vlord_starts)
 GLOBAL_LIST_EMPTY(vspawn_starts)
 GLOBAL_LIST_EMPTY(dknight_starts)
+GLOBAL_LIST_EMPTY(vlord_starts_alt)		//for maps with unique bandit areas
+GLOBAL_LIST_EMPTY(vspawn_starts_alt)		//for maps with unique bandit areas
+GLOBAL_LIST_EMPTY(dknight_starts_alt)		//for maps with unique bandit areas
 GLOBAL_LIST_EMPTY(vlordspawn_starts)
 GLOBAL_LIST_EMPTY(delf_starts)
 GLOBAL_LIST_EMPTY(nukeop_leader_start)

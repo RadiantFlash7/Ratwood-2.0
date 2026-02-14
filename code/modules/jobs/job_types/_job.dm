@@ -127,6 +127,9 @@
 	/// This job is immune to species-based swapped gender locks
 	var/immune_to_genderswap = FALSE
 
+	/// List of map names this job is allowed on. If null, allowed on all maps.
+	var/list/allowed_maps = null
+
 	/// Jobs that are obsfuscated on actor screen
 	var/obsfuscated_job = FALSE
 
@@ -412,6 +415,11 @@
 //Unused as of now
 /datum/job/proc/config_check()
 	return TRUE
+
+/datum/job/proc/map_check()
+    if(allowed_maps && !(SSmapping.config.map_name in allowed_maps))
+        return FALSE
+    return TRUE
 
 /datum/outfit/job
 	name = "Standard Gear"
