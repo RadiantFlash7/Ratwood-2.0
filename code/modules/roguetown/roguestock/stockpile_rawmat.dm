@@ -4,7 +4,7 @@
 	item_type = /obj/item/grown/log/tree/small
 	held_items = list(2, 2)
 	payout_price = 3
-	withdraw_price = 3
+	withdraw_price = 5
 	transport_fee = 3
 	export_price = 5
 	importexport_amt = 10
@@ -16,8 +16,8 @@
 	desc = "Chunks of coal used for fuel and alloying."
 	item_type = /obj/item/rogueore/coal
 	held_items = list(5, 0)
-	payout_price = 4
-	withdraw_price = 4
+	payout_price = 3
+	withdraw_price = 6
 	transport_fee = 4
 	export_price = 6
 	importexport_amt = 10
@@ -29,8 +29,8 @@
 	desc = "A red mineral used to make quicksilver."
 	item_type = /obj/item/rogueore/cinnabar
 	held_items = list(0, 0)
-	payout_price = 5
-	withdraw_price = 5
+	payout_price = 4
+	withdraw_price = 6
 	transport_fee = 10
 	export_price = 10
 	stockpile_limit = 50
@@ -43,7 +43,7 @@
 	item_type = /obj/item/natural/stone
 	held_items = list(10, 0)
 	payout_price = 1
-	withdraw_price = 1
+	withdraw_price = 2
 	transport_fee = 0
 	export_price = 1
 	importexport_amt = 10
@@ -55,8 +55,8 @@
 	desc = "A mixture of finely ground materials that is used to make glass."
 	item_type = /obj/item/natural/clay/glassbatch
 	held_items = list(5, 0)
-	payout_price = 4
-	withdraw_price = 4
+	payout_price = 3
+	withdraw_price = 5
 	transport_fee = 5
 	export_price = 5
 	importexport_amt = 5
@@ -68,8 +68,8 @@
 	desc = "Chunks of iron used for smithing."
 	item_type = /obj/item/rogueore/iron
 	held_items = list(6, 0)
-	payout_price = 5
-	withdraw_price = 5
+	payout_price = 4
+	withdraw_price = 6
 	transport_fee = 6
 	export_price = 8
 	importexport_amt = 10
@@ -82,7 +82,7 @@
 	item_type = /obj/item/rogueore/copper
 	held_items = list(6, 0)
 	payout_price = 3
-	withdraw_price = 3
+	withdraw_price = 5
 	transport_fee = 3
 	export_price = 5
 	importexport_amt = 10
@@ -95,7 +95,7 @@
 	item_type = /obj/item/rogueore/tin
 	held_items = list(6, 0)
 	payout_price = 4
-	withdraw_price = 4
+	withdraw_price = 6
 	transport_fee = 4
 	export_price = 5
 	importexport_amt = 10
@@ -107,8 +107,8 @@
 	desc = "Chunks of unrefined gold."
 	item_type = /obj/item/rogueore/gold
 	held_items = list(0, 0)
-	payout_price = 50
-	withdraw_price = 50
+	payout_price = 45
+	withdraw_price = 55
 	transport_fee = 10
 	export_price = 75
 	stockpile_limit = 50
@@ -119,8 +119,8 @@
 	desc = "Chunks of unrefined silver."
 	item_type = /obj/item/rogueore/silver
 	held_items = list(0, 0)
-	payout_price = 75
-	withdraw_price = 75
+	payout_price = 70
+	withdraw_price = 80
 	transport_fee = 10
 	export_price = 100
 	export_only = TRUE
@@ -132,8 +132,8 @@
 	desc = "A red mineral used to make quicksilver."
 	item_type = /obj/item/rogueore/cinnabar
 	held_items = list(0, 0)
-	payout_price = 5
-	withdraw_price = 5
+	payout_price = 4
+	withdraw_price = 6
 	transport_fee = 10
 	export_price = 10
 	stockpile_limit = 50
@@ -146,7 +146,7 @@
 	item_type = /obj/item/natural/cloth
 	held_items = list(0, 2)
 	payout_price = 3
-	withdraw_price = 3
+	withdraw_price = 4
 	transport_fee = 2
 	export_price = 5
 	importexport_amt = 10
@@ -159,7 +159,7 @@
 	item_type = /obj/item/natural/fibers
 	held_items = list(0, 2)
 	payout_price = 1
-	withdraw_price = 1
+	withdraw_price = 2
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -172,7 +172,7 @@
 	item_type = /obj/item/natural/silk
 	held_items = list(0, 2)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 3
 	transport_fee = 1
 	export_price = 4
 	importexport_amt = 5
@@ -185,8 +185,8 @@
 	desc = "Cured Leather ready to be worked."
 	item_type = /obj/item/natural/hide/cured
 	held_items = list(2, 0)
-	payout_price = 3
-	withdraw_price = 3
+	payout_price = 2
+	withdraw_price = 4
 	transport_fee = 3
 	export_price = 7
 	importexport_amt = 10
@@ -198,8 +198,8 @@
 	desc = "Stripped hide from animals."
 	item_type = /obj/item/natural/hide
 	held_items = list(0, 0)
-	payout_price = 8
-	withdraw_price = 8
+	payout_price = 6
+	withdraw_price = 10
 	transport_fee = 2
 	export_price = 12
 	importexport_amt = 5
@@ -211,8 +211,8 @@
 	desc = "Hide with a long winter coat from animals."
 	item_type = /obj/item/natural/fur
 	held_items = list(0, 0)
-	payout_price = 10
-	withdraw_price = 10
+	payout_price = 8
+	withdraw_price = 12
 	transport_fee = 4
 	export_price = 15
 	importexport_amt = 5
@@ -224,8 +224,8 @@
 	desc = "Viscera from animals."
 	item_type = /obj/item/alch/viscera
 	held_items = list(0, 2)
-	payout_price = 2
-	withdraw_price = 2
+	payout_price = 1
+	withdraw_price = 3
 	transport_fee = 1
 	export_price = 4
 	importexport_amt = 5

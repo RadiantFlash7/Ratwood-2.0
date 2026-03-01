@@ -1,4 +1,4 @@
-// Withdraw Price used to be designed to match export price. 
+// Withdraw Price used to be designed to match export price.
 // However this meant that food were often too expensive to buy as raw materials
 // Now for food the withdraw price is set to be the same as the payout price
 // Theoretically this does create a perverse incentive to export food instead of selling it locally
@@ -8,8 +8,8 @@
 	desc = "Rock salt useful for curing and cooking."
 	item_type = /obj/item/reagent_containers/powder/salt
 	held_items = list(2,4)
-	payout_price = 4
-	withdraw_price = 4
+	payout_price = 3
+	withdraw_price = 6
 	export_price = 8
 	importexport_amt = 5
 	passive_generation = 3
@@ -22,7 +22,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/wheat
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -36,7 +36,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/oat
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -50,7 +50,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/garlick/rogue
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -63,8 +63,8 @@
 	desc = "Edible flesh harvested from animals."
 	item_type = /obj/item/reagent_containers/food/snacks/rogue/meat/steak
 	held_items = list(0, 0)
-	payout_price = 4
-	withdraw_price = 4
+	payout_price = 3
+	withdraw_price = 6
 	transport_fee = 2
 	export_price = 8
 	importexport_amt = 10
@@ -77,8 +77,8 @@
 	desc = "Edible flesh harvested from birds."
 	item_type = /obj/item/reagent_containers/food/snacks/rogue/meat/poultry
 	held_items = list(0, 0)
-	payout_price = 4
-	withdraw_price = 4
+	payout_price = 3
+	withdraw_price = 6
 	transport_fee = 2
 	export_price = 8
 	importexport_amt = 5
@@ -91,8 +91,8 @@
 	desc = "Edible flesh harvested from cabbits."
 	item_type = /obj/item/reagent_containers/food/snacks/rogue/meat/rabbit
 	held_items = list(0, 0)
-	payout_price = 3
-	withdraw_price = 3
+	payout_price = 2
+	withdraw_price = 5
 	transport_fee = 1
 	export_price = 5
 	importexport_amt = 5
@@ -104,8 +104,8 @@
 	name = "Pig meat"
 	desc = "Piggy meat"
 	item_type = /obj/item/reagent_containers/food/snacks/rogue/meat/fatty
-	payout_price = 4
-	withdraw_price = 4
+	payout_price = 3
+	withdraw_price = 6
 	transport_fee = 1
 	export_price = 10
 	importexport_amt = 5
@@ -119,7 +119,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/egg
 	held_items = list(0, 0)
 	payout_price = 3
-	withdraw_price = 3
+	withdraw_price = 5
 	transport_fee = 2
 	export_price = 5
 	importexport_amt = 5
@@ -132,8 +132,8 @@
 	desc = "Greasy flesh from an animal."
 	item_type = /obj/item/reagent_containers/food/snacks/fat
 	held_items = list(0, 0)
-	payout_price = 3
-	withdraw_price = 3
+	payout_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 5
 	importexport_amt = 5
@@ -147,7 +147,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/tallow
 	held_items = list(0, 0)
 	payout_price = 1
-	withdraw_price = 1
+	withdraw_price = 3
 	transport_fee = 1
 	export_price = 2
 	importexport_amt = 5
@@ -160,8 +160,8 @@
 	desc = "The product of milk and salt."
 	item_type = /obj/item/reagent_containers/food/snacks/butter
 	held_items = list(0, 0)
-	payout_price = 9
-	withdraw_price = 9
+	payout_price = 7
+	withdraw_price = 12
 	transport_fee = 3
 	export_price = 13
 	importexport_amt = 5
@@ -174,8 +174,8 @@
 	desc = "Sweet sweet honey that decays into sugar. Has antibacterial and natural healing properties."
 	item_type = /obj/item/reagent_containers/food/snacks/rogue/honey
 	held_items = list(0, 0)
-	payout_price = 6
-	withdraw_price = 6
+	payout_price = 4
+	withdraw_price = 8
 	transport_fee = 3
 	export_price = 9
 	importexport_amt = 5
@@ -188,8 +188,8 @@
 	desc = "The product of milk and salt."
 	item_type = /obj/item/reagent_containers/food/snacks/rogue/cheese
 	held_items = list(0, 0)
-	payout_price = 3
-	withdraw_price = 3
+	payout_price = 2
+	withdraw_price = 4
 	transport_fee = 2
 	export_price = 5
 	importexport_amt = 5
@@ -203,7 +203,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/onion/rogue
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -217,7 +217,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/vegetable/turnip
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -231,7 +231,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/cabbage/rogue
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -245,7 +245,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/potato/rogue
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -259,7 +259,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/rice
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -273,7 +273,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/cucumber
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -287,7 +287,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/eggplant
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -301,7 +301,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/carrot
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -315,7 +315,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/rogue/poppy
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 4
 	importexport_amt = 10
@@ -329,7 +329,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/nut
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 4
 	importexport_amt = 10
@@ -342,8 +342,8 @@
 	desc = "A plant that can be milled into sugar."
 	item_type = /obj/item/reagent_containers/food/snacks/grown/sugarcane
 	held_items = list(0, 0)
-	payout_price = 3
-	withdraw_price = 3
+	payout_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -356,8 +356,8 @@
 	desc = "The seed of the coffee plant, used to make a stimulating drink."
 	item_type = /obj/item/reagent_containers/food/snacks/grown/coffeebeans
 	held_items = list(0, 0)
-	payout_price = 3
-	withdraw_price = 3
+	payout_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -370,8 +370,8 @@
 	desc = "Dried tea leaves from the tea plant. Can be grounded and brewed to make tea."
 	item_type = /obj/item/reagent_containers/food/snacks/grown/rogue/tealeaves_dry
 	held_items = list(0, 0)
-	payout_price = 3
-	withdraw_price = 3
+	payout_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10

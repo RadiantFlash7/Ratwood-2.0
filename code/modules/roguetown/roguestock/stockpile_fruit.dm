@@ -4,7 +4,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/apple
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
@@ -18,7 +18,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/pear
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -31,7 +31,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/lemon
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -44,7 +44,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/lime
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -57,7 +57,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/tangerine
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -70,7 +70,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/plum
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -83,7 +83,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/strawberry
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -96,7 +96,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/blackberry
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -109,7 +109,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/raspberry
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -122,7 +122,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/fruit/tomato
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
@@ -135,7 +135,7 @@
 	item_type = /obj/item/natural/shellplant/pumpkin
 	held_items = list(0, 4)
 	payout_price = 2
-	withdraw_price = 3
+	withdraw_price = 4
 	export_price = 4
 	importexport_amt = 5
 	passive_generation = 2
@@ -148,7 +148,7 @@
 	item_type = /obj/item/reagent_containers/food/snacks/grown/berries/rogue
 	held_items = list(0, 0)
 	payout_price = 2
-	withdraw_price = 2
+	withdraw_price = 4
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
