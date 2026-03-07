@@ -13,7 +13,7 @@
 	var/current_cat = "1"
 
 
-/obj/structure/roguemachine/Hoardmaster/Initialize()
+/obj/structure/roguemachine/Hoardmaster/Initialize(mapload)
 	. = ..()
 	update_icon()
 	var/namechance = rand(1,6)
@@ -95,7 +95,7 @@
 	contents += "<a href='?src=[REF(src)];change=1'>Your favor:</a> [B.favor]<BR>"
 
 
-	var/list/unlocked_cats = list("Things")
+	var/list/unlocked_cats = list("Supplies", "Medicaments", "Clothing")
 	switch(usr.advjob)
 		if("Brigand")
 			unlocked_cats+="Brigand"

@@ -108,11 +108,11 @@
 	return copytext((html_encode(strip_html_simple(t))),1,limit)
 
 /proc/remove_color_tags(html_text)
-    var/output = html_text
-    output = replacetext(output, regex("<font\[^>\]*color=\[^>\]*>", "g"), "")
-    output = replacetext(output, "</font>", "")
-    output = replacetext(output, regex("color=\[^ >\]*", "g"), "")
-    return output
+	var/output = html_text
+	output = replacetext(output, regex("<font\[^>\]*color=\[^>\]*>", "g"), "")
+	output = replacetext(output, "</font>", "")
+	output = replacetext(output, regex("color=\[^ >\]*", "g"), "")
+	return output
 
 //Returns null if there is any bad text in the string
 /proc/reject_bad_text(text, max_length=512)
@@ -760,7 +760,7 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 		return string
 
 	var/base = next_backslash == 1 ? "" : copytext(string, 1, next_backslash)
-	var/macro = lowertext(copytext(string, next_backslash + 1, next_space))
+	var/macro = LOWER_TEXT(copytext(string, next_backslash + 1, next_space))
 	var/rest = next_backslash > leng ? "" : copytext(string, next_space + 1)
 
 	//See https://secure.byond.com/docs/ref/info.html#/DM/text/macros
