@@ -22,7 +22,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/lemon
@@ -35,7 +35,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/lime
@@ -48,7 +48,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/tangerine
@@ -61,7 +61,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/plum
@@ -74,7 +74,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/strawberry
@@ -87,7 +87,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/blackberry
@@ -100,7 +100,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/raspberry
@@ -113,7 +113,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/tomato
@@ -126,7 +126,7 @@
 	export_price = 3
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/pumpkin
@@ -139,7 +139,7 @@
 	export_price = 4
 	importexport_amt = 5
 	passive_generation = 2
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Fruits"
 
 /datum/roguestock/stockpile/jacksberry

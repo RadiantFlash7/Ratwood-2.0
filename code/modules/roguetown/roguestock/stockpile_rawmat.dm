@@ -8,7 +8,7 @@
 	transport_fee = 3
 	export_price = 5
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 5
 
 /datum/roguestock/stockpile/coal
@@ -21,7 +21,7 @@
 	transport_fee = 4
 	export_price = 6
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 
 /datum/roguestock/stockpile/cinnabar
@@ -33,7 +33,7 @@
 	withdraw_price = 6
 	transport_fee = 10
 	export_price = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	importexport_amt = 5
 	passive_generation = 1
 
@@ -47,7 +47,7 @@
 	transport_fee = 0
 	export_price = 1
 	importexport_amt = 10
-	stockpile_limit = 50 // Allow a small amount of stones to be sold for chiselling
+	stockpile_limit = 100 // Allow a small amount of stones to be sold for chiselling
 	passive_generation = 10 // Free rocks!!
 
 /datum/roguestock/stockpile/glass
@@ -60,7 +60,7 @@
 	transport_fee = 5
 	export_price = 5
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 3
 
 /datum/roguestock/stockpile/iron
@@ -73,7 +73,7 @@
 	transport_fee = 6
 	export_price = 8
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 
 /datum/roguestock/stockpile/copper
@@ -86,7 +86,7 @@
 	transport_fee = 3
 	export_price = 5
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 
 /datum/roguestock/stockpile/tin
@@ -99,7 +99,7 @@
 	transport_fee = 4
 	export_price = 5
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 
 /datum/roguestock/stockpile/gold
@@ -111,7 +111,7 @@
 	withdraw_price = 55
 	transport_fee = 10
 	export_price = 75
-	stockpile_limit = 50
+	stockpile_limit = 100
 	importexport_amt = 10
 
 /datum/roguestock/stockpile/silver
@@ -124,7 +124,7 @@
 	transport_fee = 10
 	export_price = 100
 	export_only = TRUE
-	stockpile_limit = 25
+	stockpile_limit = 50
 	importexport_amt = 5
 
 /datum/roguestock/stockpile/cinnabar
@@ -136,7 +136,7 @@
 	withdraw_price = 6
 	transport_fee = 10
 	export_price = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	importexport_amt = 5
 	passive_generation = 1
 
@@ -163,7 +163,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 4
 
 /datum/roguestock/stockpile/silk
@@ -176,7 +176,7 @@
 	transport_fee = 1
 	export_price = 4
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 1
 
 //natural/hide/cured must be defined/populated in sstreasury before natural/hide, for istype stockpile check to work
@@ -190,7 +190,7 @@
 	transport_fee = 3
 	export_price = 7
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 3
 
 /datum/roguestock/stockpile/hide
@@ -203,7 +203,7 @@
 	transport_fee = 2
 	export_price = 12
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 2
 
 /datum/roguestock/stockpile/fur
@@ -216,7 +216,7 @@
 	transport_fee = 4
 	export_price = 15
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 1
 
 /datum/roguestock/stockpile/viscera
@@ -229,5 +229,5 @@
 	transport_fee = 1
 	export_price = 4
 	importexport_amt = 5
-	stockpile_limit = 12
+	stockpile_limit = 25
 	passive_generation = 1

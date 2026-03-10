@@ -13,7 +13,7 @@
 	export_price = 8
 	importexport_amt = 5
 	passive_generation = 3
-	stockpile_limit = 25
+	stockpile_limit = 50
 	category = "Foodstuffs"
 
 /datum/roguestock/stockpile/grain
@@ -27,7 +27,7 @@
 	export_price = 3
 	importexport_amt = 10
 	passive_generation = 3
-	stockpile_limit = 50
+	stockpile_limit = 100
 	category = "Foodstuffs"
 
 /datum/roguestock/stockpile/oat
@@ -41,7 +41,7 @@
 	export_price = 3
 	importexport_amt = 10
 	passive_generation = 3
-	stockpile_limit = 50
+	stockpile_limit = 100
 	category = "Foodstuffs"
 
 /datum/roguestock/stockpile/garlick
@@ -55,7 +55,7 @@
 	export_price = 3
 	importexport_amt = 10
 	passive_generation = 3
-	stockpile_limit = 50
+	stockpile_limit = 100
 	category = "Foodstuffs"
 
 /datum/roguestock/stockpile/meat
@@ -68,7 +68,7 @@
 	transport_fee = 2
 	export_price = 8
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -82,7 +82,7 @@
 	transport_fee = 2
 	export_price = 8
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 1
 	category = "Foodstuffs"
 
@@ -96,7 +96,7 @@
 	transport_fee = 1
 	export_price = 5
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -109,7 +109,7 @@
 	transport_fee = 1
 	export_price = 10
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 1
 	category = "Foodstuffs"
 
@@ -123,7 +123,7 @@
 	transport_fee = 2
 	export_price = 5
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -137,7 +137,7 @@
 	transport_fee = 1
 	export_price = 5
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -151,7 +151,7 @@
 	transport_fee = 1
 	export_price = 2
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -165,7 +165,7 @@
 	transport_fee = 3
 	export_price = 13
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 1
 	category = "Foodstuffs"
 
@@ -179,7 +179,7 @@
 	transport_fee = 3
 	export_price = 9
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 1
 	category = "Foodstuffs"
 
@@ -193,7 +193,7 @@
 	transport_fee = 2
 	export_price = 5
 	importexport_amt = 5
-	stockpile_limit = 25
+	stockpile_limit = 50
 	passive_generation = 1
 	category = "Foodstuffs"
 
@@ -207,7 +207,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -221,7 +221,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -235,7 +235,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -249,7 +249,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -263,7 +263,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -277,7 +277,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -291,7 +291,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -305,7 +305,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -319,7 +319,7 @@
 	transport_fee = 1
 	export_price = 4
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -333,7 +333,7 @@
 	transport_fee = 1
 	export_price = 4
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -347,7 +347,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -361,7 +361,7 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
 
@@ -375,6 +375,6 @@
 	transport_fee = 1
 	export_price = 3
 	importexport_amt = 10
-	stockpile_limit = 50
+	stockpile_limit = 100
 	passive_generation = 2
 	category = "Foodstuffs"
