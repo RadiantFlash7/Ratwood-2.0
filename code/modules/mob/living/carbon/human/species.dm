@@ -2159,7 +2159,7 @@ GLOBAL_VAR_INIT(cold_breath_overlay, mutable_appearance(
 
 			var/step = 0.25 + (protection)
 			env_adjust = -step
-		if(loc_temp <= BODYTEMP_NORMAL_MIN && !istype(cur_turf, /turf/open/water))
+		if(loc_temp <= BODYTEMP_NORMAL_MIN && !istype(cur_turf, /turf/open/water) && H.stat != DEAD)
 			if(!(GLOB.cold_breath_overlay in H.overlays))
 				H.add_overlay(GLOB.cold_breath_overlay)
 		else
