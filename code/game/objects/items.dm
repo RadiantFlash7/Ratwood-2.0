@@ -1823,3 +1823,12 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 /obj/item/proc/update_force_dynamic()
 	force_dynamic = (wielded ? force_wielded : force)
 
+/obj/item/proc/has_customized_identity()
+	if(renamedByPlayer)
+		return TRUE
+	if(original_name && original_name != name)
+		return TRUE
+	if(desc != initial(desc))
+		return TRUE
+	return FALSE
+

@@ -221,6 +221,10 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	spans |= speech_span
 
+	// Add comic sans span for characters with the annoying face trait
+	if(HAS_TRAIT(src, TRAIT_COMICSANS))
+		spans |= SPAN_SANS
+
 	if(language)
 		var/datum/language/L = GLOB.language_datum_instances[language]
 		var/list/chosen_spans
