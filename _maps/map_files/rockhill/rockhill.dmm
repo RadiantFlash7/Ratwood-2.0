@@ -760,6 +760,17 @@
 /obj/item/clothing/shoes/roguetown/boots,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/warden)
+"ajD" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable2";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/rtfield/rockhill/above)
 "ajK" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cavewet/wizarddungeon)
@@ -1771,6 +1782,16 @@
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/garrison)
+"axk" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable1";
+	aportalid = "wizdununstable2";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?"
+	},
+/turf/open/floor/rogue/greenstone/runed,
+/area/rogue/outdoors/bograt/above)
 "axp" = (
 /obj/machinery/light/rogue/candle/blue,
 /obj/structure/mineral_door/wood/deadbolt{
@@ -2026,6 +2047,17 @@
 /obj/structure/fluff/railing/border,
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/tavern)
+"aAA" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable2";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
+	},
+/turf/open/water/swamp/deep,
+/area/rogue/outdoors/bograt/north)
 "aAG" = (
 /turf/closed/wall/mineral/rogue/pipe{
 	dir = 1;
@@ -9123,6 +9155,12 @@
 "csT" = (
 /turf/closed/wall/mineral/rogue/stone/red_moss,
 /area/rogue/under/cave/dungeon1)
+"csW" = (
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bograt/north)
 "ctd" = (
 /obj/machinery/light/rogue/candle/blue{
 	pixel_x = -32;
@@ -14140,6 +14178,17 @@
 "dFh" = (
 /turf/open/water/bath,
 /area/rogue/indoors/inq)
+"dFs" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable2";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
+	},
+/turf/closed/mineral/rogue,
+/area/rogue/indoors/shelter/mountains)
 "dFu" = (
 /obj/machinery/light/rogue/firebowl/church{
 	pixel_x = -4
@@ -28668,6 +28717,17 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/warden)
+"hqM" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable2";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woodsrat/safe)
 "hqP" = (
 /obj/structure/fluff/railing/border{
 	dir = 1;
@@ -35766,6 +35826,7 @@
 /obj/structure/fluff/railing/border/east,
 /obj/structure/table/wood/long_table/right,
 /obj/item/reagent_containers/glass/bucket,
+/obj/structure/roguemachine/withdraw,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/town/sewer)
 "jnD" = (
@@ -54698,11 +54759,16 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/beach/harbor)
 "ool" = (
-/turf/open/water/pond{
-	color = "#366ad1";
-	water_color = "#3459a3"
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable2";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
 	},
-/area/rogue/outdoors/woodsrat/south)
+/turf/open/water/swamp,
+/area/rogue/outdoors/bograt/south)
 "ooo" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -59438,6 +59504,9 @@
 "pBS" = (
 /turf/closed/wall/mineral/rogue/decostone/end,
 /area/rogue/indoors/town/shop)
+"pBV" = (
+/turf/open/floor/rogue/greenstone,
+/area/rogue/outdoors/bograt/above)
 "pBZ" = (
 /obj/structure/mineral_door/wood{
 	icon_state = "wcr";
@@ -75705,6 +75774,17 @@
 	},
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor/rockhill)
+"tWa" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable1";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/bograt/above)
 "tWf" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -79782,6 +79862,17 @@
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town)
+"vbu" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable2";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/under/cavewet/wizarddungeon)
 "vbv" = (
 /obj/machinery/light/rogue/candle/l{
 	pixel_x = 32
@@ -79852,6 +79943,17 @@
 /obj/structure/flora/roguetree/wise,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield/rockhill)
+"vcp" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable2";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woodsrat/above)
 "vcA" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "borderfall"
@@ -90163,6 +90265,17 @@
 /obj/machinery/light/rogue/candle,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town)
+"xPO" = (
+/obj/structure/fluff/traveltile/magicportal{
+	aportalgoesto = "wizdununstable2";
+	aportalid = "wizdununstable1";
+	color = "#ff0d00";
+	name = "unstable portal";
+	desc = "flickering, warping magick. Where could it possibly lead?";
+	alpha = 50
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/bograt/above)
 "xQg" = (
 /obj/structure/closet/crate/drawer,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
@@ -231616,7 +231729,7 @@ wLx
 wLx
 wLx
 wLx
-wLx
+ool
 wLx
 wLx
 wLx
@@ -249728,7 +249841,7 @@ uJq
 uJq
 uJq
 uJq
-uJq
+aAA
 uJq
 uJq
 uJq
@@ -273437,8 +273550,8 @@ qbG
 qbG
 qbG
 qbG
-whb
-whb
+sYx
+fPd
 fPd
 azy
 fPd
@@ -273869,10 +273982,10 @@ qbG
 qbG
 qbG
 qbG
-whb
-whb
-whb
-gph
+fPd
+fPd
+fPd
+azy
 sYx
 sYx
 sYx
@@ -274301,10 +274414,10 @@ qbG
 qbG
 qbG
 qbG
-whb
-whb
-whb
-whb
+sYx
+fPd
+fPd
+sYx
 fGG
 sYx
 fPd
@@ -274733,12 +274846,12 @@ qbG
 qbG
 qbG
 qbG
-qbG
-whb
-whb
-whb
-whb
-gBA
+rJN
+sYx
+fPd
+sYx
+sYx
+azy
 sYx
 sYx
 sYx
@@ -275165,16 +275278,16 @@ qbG
 qbG
 qbG
 qbG
-qbG
-whb
-whb
-whb
-whb
-gBA
-whb
+rJN
+sYx
+fPd
 sYx
 sYx
+azy
 sYx
+sYx
+csW
+csW
 whb
 whb
 whb
@@ -275597,9 +275710,9 @@ qbG
 qbG
 qbG
 qbG
-qbG
-whb
-whb
+rJN
+sYx
+sYx
 whb
 gBA
 gBA
@@ -379446,7 +379559,7 @@ kKp
 qkr
 bPi
 lcK
-yat
+vbu
 lcK
 bPi
 pgs
@@ -383594,12 +383707,12 @@ xlA
 xlA
 xlA
 xlA
-rrT
-rrT
-rrT
-rrT
-cjH
-cjH
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
 kKp
 kKp
 kKp
@@ -384026,13 +384139,13 @@ xlA
 xlA
 xlA
 xlA
-rrT
-rrT
-rrT
-rrT
-auv
-cjH
-cjH
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
 kKp
 kKp
 kKp
@@ -384458,14 +384571,14 @@ xlA
 xlA
 xlA
 xlA
-rrT
-rrT
-rrT
-rrT
-cjH
-cjH
-cjH
-vLG
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
 kKp
 kKp
 kKp
@@ -384890,20 +385003,20 @@ xlA
 xlA
 xlA
 xlA
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
 rrT
 rrT
-rrT
-rrT
-rrT
-cjH
-cjH
-oqx
-lkU
-cjH
-cjH
-cjH
-lkU
-lkU
 kKp
 kKp
 kKp
@@ -385322,20 +385435,20 @@ xlA
 xlA
 xlA
 xlA
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
 rrT
 rrT
-rrT
-rrT
-rrT
-cjH
-auv
-oqx
-cjH
-auv
-lkU
-lkU
-cjH
-bQM
 cjH
 cjH
 cjH
@@ -385754,20 +385867,20 @@ xlA
 xlA
 xlA
 xlA
-rrT
-rrT
-rrT
-rrT
-rrT
-cjH
-cjH
-oqx
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+kKp
+lkU
 lkU
 lkU
 lkU
 auv
-cjH
-cjH
+vLG
+vLG
 cjH
 lkU
 cjH
@@ -386193,13 +386306,13 @@ rrT
 rrT
 rrT
 cjH
-oqx
-oqx
 lkU
 cjH
 cjH
-lkU
-lkU
+cjH
+cjH
+oqx
+oqx
 cjH
 lkU
 lkU
@@ -386626,13 +386739,13 @@ rrT
 rrT
 lkU
 cjH
-oqx
+cjH
 lkU
 cjH
 oqx
 lkU
-lkU
-cjH
+oqx
+oqx
 cjH
 lkU
 ggB
@@ -387058,14 +387171,14 @@ rrT
 rrT
 cjH
 cjH
-oqx
+cjH
 cjH
 cjH
 cjH
 cjH
 auv
 cjH
-lkU
+oqx
 cjH
 ggB
 ixt
@@ -387930,7 +388043,7 @@ lkU
 nmg
 lkU
 lkU
-cjH
+oqx
 cTC
 ixt
 mlY
@@ -388362,7 +388475,7 @@ lwu
 cjH
 cjH
 auv
-cjH
+oqx
 mlY
 ixt
 iRR
@@ -409144,7 +409257,7 @@ osh
 rKu
 rKu
 osh
-osh
+cqm
 cqm
 rKu
 osh
@@ -409576,8 +409689,8 @@ osh
 pNw
 rKu
 osh
-lOT
 cqm
+lOT
 ggB
 ggB
 nBo
@@ -410008,8 +410121,8 @@ osh
 ggB
 ggB
 nBo
-hzO
 mWY
+hzO
 nBo
 ggB
 fdO
@@ -410441,9 +410554,9 @@ nBo
 fdO
 fdO
 fdO
+fdO
 tKh
 nBo
-hzO
 ixt
 nBo
 hzO
@@ -410871,9 +410984,9 @@ ggB
 fdO
 fdO
 ixt
+nBo
 mWY
-mWY
-fdO
+hzO
 fdO
 fdO
 ixt
@@ -413893,9 +414006,9 @@ mWY
 cqm
 cqm
 cqm
-cqm
-ool
-ool
+osh
+osh
+osh
 cqm
 rKu
 cqm
@@ -414325,10 +414438,10 @@ ggB
 rKu
 cqm
 cqm
-ool
-ool
-ool
-ool
+cqm
+cqm
+cqm
+cqm
 cqm
 cqm
 cqm
@@ -414756,12 +414869,12 @@ ixt
 ggB
 rKu
 lOT
-cqm
-ool
 osh
-ool
-ool
-ool
+osh
+osh
+osh
+osh
+osh
 osh
 osh
 esf
@@ -415188,11 +415301,11 @@ nBo
 ggB
 rKu
 lOT
-cqm
-ool
-ool
-ool
-ool
+osh
+osh
+osh
+osh
+osh
 qWz
 osh
 vJu
@@ -415620,11 +415733,11 @@ nBo
 rKu
 rKu
 osh
-cqm
 osh
-ool
-ool
-ool
+osh
+osh
+osh
+osh
 lOT
 osh
 ppX
@@ -416052,9 +416165,9 @@ osh
 rKu
 rKu
 osh
-cqm
-rKu
-rKu
+osh
+osh
+osh
 kqc
 osh
 lOT
@@ -416484,8 +416597,8 @@ rKu
 pUK
 rKu
 kqc
-cqm
-cqm
+osh
+osh
 pUK
 osh
 osh
@@ -416916,8 +417029,8 @@ rKu
 osh
 rKu
 kqc
-rKu
-rKu
+osh
+osh
 osh
 osh
 osh
@@ -417348,7 +417461,7 @@ qWz
 kqc
 osh
 rKu
-rKu
+osh
 rKu
 kqc
 osh
@@ -521141,7 +521254,7 @@ uhW
 hnj
 pFf
 pFf
-pFf
+hqM
 pFf
 pFf
 pFf
@@ -557215,7 +557328,7 @@ xlA
 xlA
 xlA
 xlA
-xlA
+ajD
 xlA
 xlA
 xlA
@@ -562099,7 +562212,7 @@ kKp
 kKp
 kKp
 kKp
-kKp
+xPO
 kKp
 kKp
 kKp
@@ -580211,7 +580324,7 @@ kKp
 kKp
 kKp
 kKp
-kKp
+xPO
 kKp
 kKp
 kKp
@@ -593017,7 +593130,7 @@ vIa
 vIa
 vIa
 vIa
-vIa
+dFs
 vIa
 vIa
 vIa
@@ -596567,7 +596680,7 @@ xlA
 xlA
 xlA
 xlA
-xlA
+ajD
 xlA
 xlA
 kKp
@@ -597599,7 +597712,7 @@ kKp
 kKp
 kKp
 kKp
-kKp
+kPD
 kKp
 kKp
 kKp
@@ -598460,12 +598573,12 @@ kKp
 kKp
 kKp
 kKp
+xPO
 kKp
 kKp
+kPD
 kKp
-kKp
-kKp
-kKp
+kPD
 kKp
 kKp
 kKp
@@ -599327,10 +599440,10 @@ kKp
 kKp
 kKp
 kKp
-kKp
-kKp
-kKp
-kKp
+pBV
+pyE
+kPD
+kPD
 nlq
 bxv
 pgs
@@ -599757,13 +599870,13 @@ kKp
 kKp
 kKp
 kKp
+kPD
 kKp
-kKp
-kKp
-kKp
-kKp
-kKp
-nlq
+axk
+pBV
+kPD
+kPD
+kPD
 iZS
 dqb
 hTR
@@ -599773,7 +599886,7 @@ jRa
 xzm
 qkr
 kKp
-kKp
+tWa
 kKp
 kKp
 kKp
@@ -600191,10 +600304,10 @@ kKp
 kKp
 kKp
 kKp
+pBV
+pyE
 kKp
-kKp
-kKp
-kKp
+kPD
 nlq
 mMm
 qkr
@@ -618566,7 +618679,7 @@ xlA
 xlA
 xlA
 xlA
-xlA
+ajD
 xlA
 xlA
 xlA
@@ -631302,7 +631415,7 @@ urb
 urb
 urb
 urb
-urb
+vcp
 urb
 urb
 urb

@@ -2761,7 +2761,7 @@
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/manor)
 "aCl" = (
-/turf/closed/mineral/random/rogue/high,
+/turf/closed/wall/mineral/rogue/wood,
 /area/rogue/under/town/sewer)
 "aCq" = (
 /obj/structure/flora/roguegrass/maneater/real,
@@ -4025,7 +4025,7 @@
 "aOQ" = (
 /obj/item/rogueweapon/pick/aalloy,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/under/town/sewer)
+/area/rogue/under/cave)
 "aOS" = (
 /obj/item/rogueweapon/pick,
 /obj/structure/closet/crate/chest/old_crate,
@@ -11768,6 +11768,7 @@
 /obj/structure/fluff/railing/border/east,
 /obj/structure/table/wood/long_table/right,
 /obj/item/reagent_containers/glass/bucket,
+/obj/structure/roguemachine/withdraw,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/town/sewer)
 "ctc" = (
@@ -35400,6 +35401,10 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/mountains)
 "hnl" = (
+/obj/structure/closet/crate/chest/old_crate,
+/obj/structure/fluff/walldeco/customflag{
+	pixel_y = 32
+	},
 /obj/effect/decal/cleanable/dirt/cobweb,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/sewer)
@@ -45796,8 +45801,9 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave/his_vault/four)
 "jwD" = (
-/obj/effect/decal/remains/human,
-/turf/open/floor/rogue/naturalstone,
+/obj/effect/decal/cleanable/debris/glassy,
+/obj/structure/closet/crate/roguecloset,
+/turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/under/town/sewer)
 "jwJ" = (
 /obj/structure/fluff/railing/border/west{
@@ -51889,6 +51895,15 @@
 	},
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/town)
+"kJe" = (
+/obj/effect/decal/cleanable/debris/woody{
+	dir = 1
+	},
+/obj/machinery/light/rogue/candle/blue{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/tile/brownbrick,
+/area/rogue/under/town/sewer)
 "kJg" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -74430,11 +74445,8 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/beach/forest/hamlet)
 "pmo" = (
-/obj/structure/closet/crate/chest/old_crate,
-/obj/structure/fluff/walldeco/customflag{
-	pixel_y = 32
-	},
-/turf/open/floor/rogue/blocks,
+/obj/structure/closet/crate/roguecloset,
+/turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/under/town/sewer)
 "pmx" = (
 /obj/structure/table/wood/large_table/middle_west,
@@ -81340,6 +81352,10 @@
 "qHB" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/orcdungeon)
+"qHD" = (
+/obj/machinery/light/rogue/candle/blue,
+/turf/open/floor/rogue/tile/brownbrick,
+/area/rogue/under/town/sewer)
 "qHE" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -85836,6 +85852,10 @@
 /area/rogue/outdoors/mountains/decap)
 "rDK" = (
 /obj/structure/fluff/railing/corner/south_west,
+/obj/structure/roguemachine/withdraw{
+	pixel_y = 0;
+	pixel_x = -32
+	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town)
 "rDM" = (
@@ -100675,7 +100695,7 @@
 "uFp" = (
 /obj/effect/decal/remains/wolf,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/under/town/sewer)
+/area/rogue/under/cave)
 "uFB" = (
 /obj/structure/fluff/railing/wood/east{
 	layer = 2.8;
@@ -111486,7 +111506,6 @@
 /area/rogue/under/town/basement)
 "wOg" = (
 /obj/structure/roguemachine/scomm/l,
-/obj/structure/roguemachine/withdraw,
 /obj/structure/stairs{
 	dir = 1
 	},
@@ -117119,6 +117138,11 @@
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/blue,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
+"xXb" = (
+/turf/closed/wall/mineral/rogue/pipe/joint/four{
+	dir = 1
+	},
+/area/rogue/under/town/sewer)
 "xXf" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -174551,9 +174575,9 @@ qHj
 fju
 fju
 qHj
-aCl
-aCl
-uvk
+qHj
+qHj
+dIV
 uFp
 aOQ
 qHj
@@ -175004,10 +175028,10 @@ fju
 fju
 fju
 qHj
-aCl
-orc
-orc
-jwD
+qHj
+toJ
+toJ
+gYq
 qHj
 qHj
 qHj
@@ -175456,10 +175480,10 @@ qHj
 fju
 fju
 fju
-orc
-orc
-tQC
-avB
+toJ
+toJ
+htN
+rTB
 qHj
 qHj
 qHj
@@ -175909,8 +175933,8 @@ toJ
 fju
 fju
 htN
-tQC
-tQC
+htN
+htN
 toJ
 qHj
 qHj
@@ -176361,8 +176385,8 @@ htN
 fju
 fju
 fju
-xCK
-tQC
+fju
+htN
 htN
 toJ
 qHj
@@ -176812,10 +176836,10 @@ htN
 htN
 htN
 fju
-xCK
-xCK
-xCK
-xCK
+fju
+fju
+fju
+fju
 toJ
 qHj
 qHj
@@ -177264,9 +177288,9 @@ htN
 htN
 toJ
 toJ
-xCK
-xCK
-xCK
+fju
+fju
+fju
 fju
 fju
 toJ
@@ -177718,7 +177742,7 @@ egF
 rqY
 rqY
 rqY
-xCK
+fju
 fju
 fju
 toJ
@@ -178170,8 +178194,8 @@ egF
 haH
 tbw
 rqY
-orc
-xCK
+toJ
+fju
 fju
 htN
 toJ
@@ -178622,8 +178646,8 @@ fcL
 oiq
 haH
 rqY
-orc
-xCK
+toJ
+fju
 fju
 htN
 toJ
@@ -179074,9 +179098,9 @@ fcL
 haH
 haH
 rqY
-orc
-xCK
-xCK
+toJ
+fju
+fju
 fju
 toJ
 toJ
@@ -179526,12 +179550,12 @@ egF
 haH
 dNs
 rqY
-orc
-orc
-xCK
-xCK
-xCK
-xCK
+toJ
+toJ
+fju
+fju
+fju
+fju
 qHj
 qHj
 qHj
@@ -179980,11 +180004,11 @@ rqY
 rqY
 rqY
 bhJ
-orc
-orc
-xCK
-xCK
-xCK
+toJ
+toJ
+fju
+fju
+fju
 bhJ
 bhJ
 qHj
@@ -180433,10 +180457,10 @@ tbw
 rqY
 bhJ
 bhJ
-orc
-xCK
-xCK
-xCK
+toJ
+fju
+fju
+fju
 bhJ
 bhJ
 qHj
@@ -180885,10 +180909,10 @@ haH
 rqY
 bhJ
 bhJ
-orc
-orc
-xCK
-xCK
+toJ
+toJ
+fju
+fju
 bhJ
 bhJ
 qHj
@@ -181337,9 +181361,9 @@ haH
 rqY
 bhJ
 bhJ
-orc
-orc
-xCK
+toJ
+toJ
+fju
 bhJ
 bhJ
 bhJ
@@ -181790,7 +181814,7 @@ rqY
 bhJ
 bhJ
 bhJ
-uvk
+dIV
 bhJ
 bhJ
 bhJ
@@ -182242,8 +182266,8 @@ aHc
 aHc
 aHc
 aHc
-tQC
-tQC
+htN
+htN
 bhJ
 bhJ
 qHj
@@ -182694,8 +182718,8 @@ ozX
 vKP
 iJA
 aHc
-tQC
-tQC
+htN
+htN
 bhJ
 bhJ
 qHj
@@ -183146,8 +183170,8 @@ vKP
 vKP
 wCR
 aHc
-tQC
-tQC
+htN
+htN
 bhJ
 bhJ
 bhJ
@@ -183598,9 +183622,9 @@ knO
 vKP
 pff
 aHc
-orc
-avB
-tQC
+toJ
+rTB
+htN
 bhJ
 bhJ
 qHj
@@ -184050,10 +184074,10 @@ rLb
 vKP
 jGj
 aHc
-uvk
-orc
-avB
-tQC
+dIV
+toJ
+rTB
+htN
 bhJ
 qHj
 qHj
@@ -184502,11 +184526,11 @@ wrE
 yjV
 mxq
 aHc
-orc
-uvk
-tQC
-tQC
-avB
+toJ
+dIV
+htN
+htN
+rTB
 bhJ
 qHj
 qHj
@@ -184954,11 +184978,11 @@ nUJ
 yjV
 vKP
 aHc
-orc
-uvk
-avB
-tQC
-xCK
+toJ
+dIV
+rTB
+htN
+fju
 bhJ
 qHj
 qHj
@@ -185409,8 +185433,8 @@ aHc
 aHc
 aHc
 aHc
-xCK
-xCK
+fju
+fju
 bhJ
 qHj
 qHj
@@ -185861,9 +185885,9 @@ ntJ
 vKP
 lYV
 aHc
-xCK
-xCK
-xCK
+fju
+fju
+fju
 qHj
 qHj
 qHj
@@ -186313,9 +186337,9 @@ uXF
 vKP
 vKP
 aHc
-sFg
-xCK
-xCK
+iVj
+fju
+fju
 qHj
 qHj
 qHj
@@ -186765,8 +186789,8 @@ aHc
 mMG
 vKP
 aHc
-xCK
-xCK
+fju
+fju
 bhJ
 qHj
 qHj
@@ -187217,8 +187241,8 @@ aHc
 aHc
 vKP
 aHc
-xCK
-xCK
+fju
+fju
 bhJ
 qHj
 qHj
@@ -187669,8 +187693,8 @@ aHc
 aHc
 aug
 lmX
-xCK
-xCK
+fju
+fju
 bhJ
 bhJ
 qHj
@@ -188121,8 +188145,8 @@ aHc
 aHc
 aHc
 aHc
-xCK
-avB
+fju
+rTB
 bhJ
 bhJ
 qHj
@@ -188571,10 +188595,10 @@ moe
 moe
 xCK
 xCK
-xCK
-xCK
-avB
-tQC
+fju
+fju
+rTB
+htN
 bhJ
 bhJ
 qHj
@@ -189023,9 +189047,9 @@ moe
 tQC
 moe
 moe
-tQC
-tQC
-tQC
+htN
+htN
+htN
 bhJ
 bhJ
 bhJ
@@ -189475,9 +189499,9 @@ jcb
 orc
 moe
 avB
-tQC
-tQC
-dgy
+htN
+htN
+mhy
 bhJ
 bhJ
 bhJ
@@ -193533,7 +193557,7 @@ aAV
 spI
 cqm
 hnl
-xCK
+jtd
 xCK
 xCK
 cqm
@@ -193984,10 +194008,10 @@ jLB
 spI
 spI
 xyd
-pmo
+mlH
+nlK
+xSz
 jtd
-xCK
-xCK
 cqm
 moe
 moe
@@ -194434,15 +194458,15 @@ cqm
 nlj
 nlj
 spI
-spI
-cqm
-mlH
-nlK
-xSz
-jtd
-cqm
-moe
-moe
+ouk
+ltb
+iZp
+edq
+iZp
+iZp
+xXb
+iZp
+sIr
 moe
 moe
 orc
@@ -194886,15 +194910,15 @@ dlK
 hvw
 hvw
 spI
-ouk
-ltb
-iZp
-edq
-iZp
-iZp
-dNN
-moe
-moe
+spI
+spI
+kKL
+cqm
+spI
+aCl
+lEx
+jwD
+cqm
 moe
 moe
 orc
@@ -195340,13 +195364,13 @@ dCm
 spI
 cII
 spI
-kKL
+kJe
 cqm
-lEx
-qKn
+spI
+aMg
+spI
+spI
 cqm
-moe
-moe
 moe
 wAg
 tQC
@@ -195792,13 +195816,13 @@ lVk
 qKn
 spI
 spI
-aAV
-cqm
 spI
+aMg
 spI
+aCl
+aCl
+aCl
 cqm
-moe
-moe
 moe
 moe
 tQC
@@ -196245,12 +196269,12 @@ lFd
 spI
 spI
 spI
+cqm
+qHD
 aMg
 spI
 spI
 cqm
-moe
-moe
 moe
 rVQ
 rVQ
@@ -196699,10 +196723,10 @@ xAW
 spI
 cqm
 ybM
+aCl
+pmo
 lEx
 cqm
-moe
-moe
 rVQ
 rVQ
 rVQ
@@ -197152,9 +197176,9 @@ spI
 dlK
 iZp
 edq
+iZp
+iZp
 iIm
-iZp
-iZp
 iZp
 iZp
 dlK
@@ -413241,11 +413265,11 @@ aBB
 aBB
 aBB
 aBB
-aBB
-aBB
-aBB
-aBB
-aBB
+nRO
+nRO
+oDP
+ier
+ier
 aBB
 aBB
 aBB
@@ -413693,11 +413717,11 @@ aBB
 aBB
 aBB
 aBB
-aBB
-aBB
-aBB
-aBB
-aBB
+nRO
+nRO
+oDP
+ier
+ier
 aBB
 aBB
 aBB
@@ -414145,11 +414169,11 @@ aBB
 aBB
 aBB
 aBB
-aBB
-aBB
-aBB
-aBB
-aBB
+nRO
+nRO
+oDP
+ier
+ier
 aBB
 aBB
 aBB
@@ -414597,11 +414621,11 @@ aBB
 aBB
 aBB
 aBB
-aBB
-aBB
-aBB
-aBB
-aBB
+nRO
+nRO
+oDP
+ier
+ier
 aBB
 aBB
 aBB
@@ -415049,11 +415073,11 @@ aBB
 aBB
 aBB
 aBB
-aBB
-aBB
-aBB
-aBB
-aBB
+nRO
+nRO
+oDP
+ier
+ier
 aBB
 aBB
 aBB
@@ -415501,11 +415525,11 @@ aBB
 aBB
 aBB
 aBB
-aBB
-aBB
-aBB
-aBB
-aBB
+nRO
+nRO
+oDP
+ier
+ier
 aBB
 aBB
 aBB
@@ -415953,11 +415977,11 @@ aBB
 aBB
 aBB
 aBB
-aBB
-aBB
-aBB
-aBB
-aBB
+nRO
+nRO
+oDP
+ier
+ier
 aBB
 aBB
 aBB
