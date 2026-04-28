@@ -272,3 +272,83 @@
   - rscadd: lawless vice from SR
   - spellcheck: fixes a possessive it in the description of the lesser cursed collar
   - qol: knights recieve daily pay
+2026-04-23:
+  john-pawson:
+  - bugfix: Birdboat, the admin-spawned goose, can now eat and vomit all of your food.
+2026-04-25:
+  IronDragoon:
+  - rscadd: Wedding dress, artificer cap and artificer jacket to loadout items (arti
+      items to tailor silverface also)
+  - rscadd: Crafting for pestran tabard (the robes)
+  - rscadd: basic dobo robe and conical mentor hat now craftable in round with appropriate
+      skills/materials
+  - rscadd: "several kazengun weapons to the exotic weapon section of the merchant's\
+      \ silverface, balanced around other racial weapons already present\n<!-- Both\
+      \ :cl:'s are required for the changelog to work! You can put your name to the\
+      \ right of the first :cl: if you want to overwrite your GitHub username as author\
+      \ ingame. -->\n<!-- You can use multiple of the same prefix (they're only used\
+      \ for the icon ingame) and delete the unneeded ones. Despite some of the tags,\
+      \ changelogs should generally represent how a player might be affected by the\
+      \ changes rather than a summary of the PR's contents. -->\n<!-- By contributing\
+      \ to this codebase, you confirm that any code and sprites you provide are legal\
+      \ to share and will be licensed under the terms specified in README.md \u2014\
+      \ AGPLv3 for code and CC-BY-SA 3.0 for assets, unless otherwise stated. You\
+      \ acknowledge that the project maintainers are under no obligation to remove\
+      \ any materials that do not violate these licenses. -->"
+  MickDick1:
+  - rscadd: Added forced wall-leaning (use aggro grab on chest and drag sprite to
+      the adjacent wall)
+  Mr. Pickle Willy:
+  - rscadd: Added "APAB (All Paladins Are Bastards)" by Burialgoods as a selectable
+      combat track, under the name "Sorcerer (Evil)".
+  RadiantFlash7:
+  - balance: Player controlled Fiends, sylphs and watchers have 1.5-2x more ranged
+      cooldown delay
+  Xander3359:
+  - rscadd: Harpies and Arachnids now show up on the round-end panel.
+  - code_imp: Prevents images from being destroyed
+  - bugfix: Fixed non combat taggable regenerating skin regen instantly.
+  hugmeorelse:
+  - bugfix: Fixes parcel dead drop, so it spawns at range, not just when you're on
+      the same tile. Additionally, parcel spawn is tied to the scroll holder.
+  zeroisthebiggay:
+  - rscadd: anyone above twelve strength can use strong intent while having sex to
+      act as if they have the bedbreaker trait
+  - rscadd: baits are now based on regions, rather than targeting specific body parts,
+      for example this means baiting someone's head will bait them if they're targeting
+      your right eye
+  zoktiik:
+  - sound: Added a new sound for recorking glass bottles.
+  - qol: You can now right-click to toggle a glass bottle's cork as long as you're
+      adjacent, and it's not in a bag. Left-clicking it in your hand, and pressing
+      the hotkey for your active hand, also work.
+  - bugfix: Bottles now tell you when one or both of them in a transfer interaction
+      is closed. This includes FEED, FILL, and SPLASH intents.
+  - qol: A small warning in gray text is shown when you put an uncorked bottle in
+      your bag.
+  - bugfix: You are now warned in chat when an open container in your inventory (in
+      a bag) is spilling due to movement.
+  - code_imp: Standardized the anti-spilling behavior of trays, using a new "does_not_spill"
+      variable for storage components.
+2026-04-26:
+  MarioTheShiba:
+  - qol: gives barbers the opportunity to roleplay and give people good mood buffs
+      by getting a nice haircut.
+  Xander3359:
+  - balance: Eora's bud no longer pacifies Eoran's
+  - balance: Eora's bud now gives stats and prevents some stat loss from the pomegranate
+      tree
+  - rscdel: Removes Circuitus
+2026-04-27:
+  EvenInDeathIStillServe:
+  - rscadd: Added a fifth force and speed setting for sex, locked under truly debauched
+      conditions.
+  - rscadd: Barbarians get some outdoors skills now.
+  kimesik:
+  - rscadd: Virtues and sins (fluff) for each of patron gods.
+2026-04-28:
+  Jamdrawers:
+  - rscadd: Added chastity cages, dildos and more to the nightmaster's buy-menu
+  NotGoldenglow:
+  - balance: arcyne potential is no longer limited by crit/dodge/pain trait/armor
+      proficiency. if you previously did not qualify for this trait, you now do.

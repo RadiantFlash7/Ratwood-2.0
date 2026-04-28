@@ -1,0 +1,4 @@
+author: "KeberosNihilus"
+delete-after: True
+changes:
+  - sound: "Changed Brigandine and Splint leggings from using the Brigandine Fullplate SFX to using the standard Plate SFX."

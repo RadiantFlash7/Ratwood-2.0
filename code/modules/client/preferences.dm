@@ -1876,7 +1876,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						var/datum/faith/faith = faiths_named[faith_input]
 						to_chat(user, "<font color='yellow'>Faith: [faith.name]</font>")
 						to_chat(user, "Background: [faith.desc]")
-						to_chat(user, "<font color='red'>Likely Worshippers: [faith.worshippers]</font>")
+						to_chat(user, "<font color='purple'>Likely Worshippers: [faith.worshippers]</font>")
 						selected_patron = GLOB.patronlist[faith.godhead] || GLOB.patronlist[pick(GLOB.patrons_by_faith[faith_input])]
 
 				if("patron")
@@ -1894,7 +1894,9 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						to_chat(user, "<font color='yellow'>Patron: [selected_patron]</font>")
 						to_chat(user, "<font color='#FFA500'>Domain: [selected_patron.domain]</font>")
 						to_chat(user, "Background: [selected_patron.desc]")
-						to_chat(user, "<font color='red'>Likely Worshippers: [selected_patron.worshippers]</font>")
+						to_chat(user, "<font color='purple'>Likely Worshippers: [selected_patron.worshippers]</font>")
+						to_chat(user, "<font color='white'>Considers these to be VIRTUES: [selected_patron.virtues]</font>")
+						to_chat(user, "<font color='red'>Considers these to be SINS: [selected_patron.sins]</font>")
 
 				if("combat_music") // if u change shit here look at /client/verb/combat_music() too
 					if(!combat_music_helptext_shown)
