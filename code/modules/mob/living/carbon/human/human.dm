@@ -114,6 +114,7 @@
 	AddComponent(/datum/component/personal_crafting)
 	AddComponent(/datum/component/footstep, footstep_type, 1, 2)
 	GLOB.human_list += src
+	update_tongue_noise_verbs()
 
 /mob/living/carbon/human/ZImpactDamage(turf/T, levels)
 	var/obj/item/bodypart/affecting
@@ -660,8 +661,6 @@
 					hud_used.temperature.icon_state = "temphot"
 				else if(bodytemperature > BODYTEMP_HEAT_LEVEL_ONE_MAX)
 					hud_used.temperature.icon_state = "tempveryhot"
-		if(hud_used.zone_select)
-			hud_used.zone_select.update_icon()
 
 /mob/living/carbon/human/fully_heal(admin_revive = FALSE, break_restraints = FALSE)
 	dna?.species.spec_fully_heal(src)

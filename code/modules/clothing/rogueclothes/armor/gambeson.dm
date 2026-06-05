@@ -56,7 +56,6 @@
 	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
 	sellprice = 25
 	color = "#b49679"
-	sewrepair = TRUE
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	var/shiftable = TRUE
@@ -142,6 +141,7 @@
 	shiftable = FALSE
 	sellprice = 30
 	var/picked = FALSE
+	dropshrink = 0.9
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan/attack_right(mob/user)
 	..()

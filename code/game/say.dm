@@ -140,7 +140,10 @@ GLOBAL_LIST_INIT(freqtospan, list(
 			else
 				hidden = TRUE
 			if(hidden)
-				if(istype(speaker, /mob/living))
+				if(ishuman(speaker))
+					var/mob/living/carbon/human/human = speaker
+					namepart = human.get_alt_name(TRUE)
+				else if(istype(speaker, /mob/living))
 					var/mob/living/L = speaker
 					namepart = "Unknown [(L.gender == FEMALE) ? "Woman" : "Man"]"
 				else
@@ -163,7 +166,15 @@ GLOBAL_LIST_INIT(freqtospan, list(
 
 /mob/handle_language_spans(list/spans)
 	if(client?.prefs?.no_language_fonts)
+		var/list/accent_font_spans = list()
+		if(GLOB.accent_spans)
+			for(var/accent_name in GLOB.accent_spans)
+				var/list/accent_span_list = GLOB.accent_spans[accent_name]
+				if(islist(accent_span_list) && accent_span_list.len)
+					accent_font_spans |= accent_span_list
 		for(var/language_span in LANGUAGE_SPANS)
+			if(accent_font_spans?.len && (language_span in accent_font_spans))
+				continue
 			spans -= language_span
 	return spans
 

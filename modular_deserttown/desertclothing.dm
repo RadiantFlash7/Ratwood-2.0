@@ -94,6 +94,7 @@
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
+	dropshrink = null
 
 /obj/item/clothing/head/roguetown/helmet/janissaryhelm
 	name = "Janissary Helmet"
@@ -104,6 +105,7 @@
 	max_integrity = 250
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS|HIDEHAIR
+	dropshrink = null
 
 // /obj/item/clothing/head/roguetown/helmet/janissary
 // 	name = "Janissaries Helm"
@@ -161,7 +163,6 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|VITALS
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	sewrepair = TRUE
 
 /obj/item/clothing/suit/roguetown/shirt/robe/bisht/grey
 	color = "#989898"
@@ -236,6 +237,7 @@
 	mob_overlay_icon = 'modular_deserttown/icons/clothing/onmob/shirts.dmi'
 	icon_state = "thawb"
 	item_state = "thawb"
+	dropshrink = null
 
 /obj/item/clothing/suit/roguetown/shirt/dress/thawb/black
 	color = CLOTHING_BLACK
@@ -349,6 +351,7 @@
 	mob_overlay_icon = 'modular_deserttown/icons/clothing/onmob/easternclothes.dmi'
 	icon_state = "turban"
 	item_state = "turban"
+	dropshrink = null
 
 /obj/item/clothing/head/roguetown/turban/tan
 	color = "#93714b"
@@ -689,6 +692,7 @@
 	mob_overlay_icon = 'modular_deserttown/icons/clothing/onmob/shirts.dmi'
 	icon_state = "exoticsilkbrag"
 	item_state = "exoticsilkbrag"
+	dropshrink = null
 
 /datum/crafting_recipe/roguetown/sewing/bragreen
 	name = "exotic silk bra(green)"
@@ -702,6 +706,7 @@
 	mob_overlay_icon = 'modular_deserttown/icons/clothing/onmob/shirts.dmi'
 	icon_state = "exoticsilkbrar"
 	item_state = "exoticsilkbrar"
+	dropshrink = null
 
 /datum/crafting_recipe/roguetown/sewing/brared
 	name = "exotic silk bra (red)"
@@ -714,6 +719,7 @@
 	mob_overlay_icon = 'modular_deserttown/icons/clothing/onmob/masks.dmi'
 	icon_state = "exoticsilkmaskg"
 	item_state = "exoticsilkmaskg"
+	dropshrink = null
 
 /datum/crafting_recipe/roguetown/sewing/maskgreen
 	name = "exotic silk mask (green)"
@@ -739,6 +745,7 @@
 	desc = "Sturdy boots stitched together from cured leather. Stylish, firm, and sport a satisfying 'squeek' with each step."
 	icon_state = "shalal"//change when I get around to it
 	item_state = "shalal"
+	color = "#d4c7bf"
 	armor = ARMOR_LEATHER_GOOD
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_TWIST)	//Same as gloves
 	max_integrity = 100			//Half that of iron boots

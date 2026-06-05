@@ -16,6 +16,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	throw_speed = 1
 	throw_range = 3
+	dropshrink = 0.8
 
 /obj/item/clothing/head/peaceflower/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
@@ -1306,7 +1307,6 @@
 
 /obj/item/reagent_containers/food/snacks/eoran_aril/pearlescent/attack(mob/living/M, mob/living/user, def_zone)
 	if(ishuman(M))
-		var/mob/living/carbon/human/eater = M
 		M.apply_status_effect(/datum/status_effect/pearlescent_aril)
 	qdel(src)
 	return

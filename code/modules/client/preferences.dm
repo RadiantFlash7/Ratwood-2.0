@@ -49,6 +49,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	// Custom Keybindings
 	var/list/key_bindings = list()
+	/// Whether closing keybind setup should return to character preferences.
+	var/keybinds_return_to_prefs = TRUE
 
 	var/tgui_fancy = TRUE
 	var/tgui_lock = TRUE
@@ -196,6 +198,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/widescreenpref = TRUE
 
 	var/musicvol = 50
+	var/combatmusicvol = 50
 	var/lobbymusicvol = 50
 	var/ambiencevol = 50
 	var/mastervol = 50
@@ -210,6 +213,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/no_autopunctuate = FALSE
 	var/no_language_fonts = FALSE
 	var/no_language_icon = FALSE
+	var/hide_unavailable_emotes = FALSE
+	var/hide_tongue_noise_warnings = FALSE
 	var/ghost_protection = FALSE
 	var/lastclass
 
@@ -1374,7 +1379,10 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 			user.client.prefs.lastclass = null
 			user.client.prefs.save_preferences()
 
-/datum/preferences/proc/SetKeybinds(mob/user)
+/datum/preferences/proc/SetKeybinds(mob/user, return_to_prefs = null)
+	if(!isnull(return_to_prefs))
+		keybinds_return_to_prefs = !!return_to_prefs
+	var/return_flag = keybinds_return_to_prefs ? 1 : 0
 	var/list/dat = list()
 	// Create an inverted list of keybindings -> key
 	var/list/user_binds = list()
@@ -1390,7 +1398,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 
 	dat += "<style>label { display: inline-block; width: 200px; }</style><body>"
 
-	dat += "<center><a href='?_src_=prefs;preference=keybinds;task=close'>Done</a></center><br>"
+	dat += "<center><a href='?_src_=prefs;preference=keybinds;task=close;return_to_prefs=[return_flag]'>Done</a></center><br>"
 	for (var/category in kb_categories)
 		for (var/i in kb_categories[category])
 			var/datum/keybinding/kb = i
@@ -1589,7 +1597,10 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		switch(href_list["task"])
 			if("close")
 				user << browse(null, "window=keybind_setup")
-				ShowChoices(user)
+				if(text2num(href_list["return_to_prefs"]) || keybinds_return_to_prefs)
+					ShowChoices(user)
+			if("menu")
+				SetKeybinds(user, TRUE)
 			if("update")
 				SetKeybinds(user)
 			if("keybindings_capture")
@@ -1652,7 +1663,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 			if("keybindings_reset")
 				var/choice = tgalert(user, "Do you really want to reset your keybindings?", "Setup keybindings", "Do It", "Cancel")
 				if(choice == "Cancel")
-					ShowChoices(user,3)
+					SetKeybinds(user)
 					return
 				hotkeys = (choice == "Do It")
 				key_bindings = (hotkeys) ? deepCopyList(GLOB.hotkey_keybinding_list_by_key) : deepCopyList(GLOB.classic_keybinding_list_by_key)
@@ -1905,10 +1916,17 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						which is influenced by your job class, villain status, or certain events.\n\
 						You can change this later through \"Combat Mode Music\" in the Options tab.\"</span>")
 						combat_music_helptext_shown = TRUE
-					var/track_select = tgui_input_list(user, "To you, the Signal sounds like:", "COMBAT MUSIC", GLOB.cmode_tracks_by_name, combat_music?.name)
-					if(track_select)
-						combat_music = GLOB.cmode_tracks_by_name[track_select]
-						to_chat(user, span_notice("Selected track: <b>[track_select]</b>."))
+					var/client/C = user?.client
+					if(!C)
+						return
+					var/datum/combat_music/selected_track = C.pick_combat_music_with_listen(
+						"To you, the Signal sounds like:",
+						"COMBAT MUSIC",
+						combat_music?.name,
+					)
+					if(selected_track)
+						combat_music = selected_track
+						to_chat(user, span_notice("Selected track: <b>[selected_track.name]</b>."))
 						if(combat_music.desc)
 							to_chat(user, "<i>[combat_music.desc]</i>")
 						if(combat_music.credits)
@@ -2554,6 +2572,21 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					var/selectedaccent = tgui_input_list(user, "Choose your character's accent:", "Character Preference", GLOB.character_accents)
 					if(selectedaccent)
 						char_accent = selectedaccent
+						var/test_message = "Hello friend, yes this is good. My Lord rides through the Duchy with servants and soldiers; the captain and sergeant guard the church while archers and cavalry hold the north road. My sword and shield are sharp, the water flows refreshingly, and we thank the Duke before saying goodbye."
+						var/preview = apply_accent_preview(selectedaccent, test_message)
+						var/preview_text
+						if(preview)
+							preview_text = "[preview]"
+						else
+							preview_text = "[test_message] (this accent uses no text replacements)"
+
+						var/list/accent_preview_spans = GLOB.accent_spans?[selectedaccent]
+						if(accent_preview_spans?.len)
+							var/accent_preview_span = accent_preview_spans[1]
+							if(accent_preview_span)
+								preview_text = "<span class='[accent_preview_span]'>[preview_text]</span>"
+
+						to_chat(user, span_info("<b>[selectedaccent] Preview:</b> [preview_text]"))
 
 				if("ooccolor")
 					var/new_ooccolor = color_pick_sanitized(user, "Choose your OOC colour:", "Game Preference",ooccolor)
@@ -3044,6 +3077,8 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 
 /datum/preferences/proc/copy_to(mob/living/carbon/human/character, icon_updates = 1, roundstart_checks = TRUE, character_setup = FALSE, antagonist = FALSE, skip_normal_prefs = FALSE)
 	if(skip_normal_prefs)
+		_load_statpack() /// This should load statpack preferences, I'm at my limit here.
+		character.statpack = statpack
 		// For gnolls spawning from a non-gnoll base slot, we must not apply any base-slot state.
 		// Set species to gnoll immediately so advclass check_requirements can read dna.species.type.
 		character.set_species(/datum/species/gnoll, icon_update = FALSE)

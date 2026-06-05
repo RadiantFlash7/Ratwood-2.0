@@ -47,6 +47,7 @@
 	sewrepair = TRUE
 	sellprice = 10
 	resistance_flags = FIRE_PROOF
+	dropshrink = 0.8
 
 /obj/item/storage/belt/rogue/leather/plaquegold
 	name = "plaque belt"
@@ -124,8 +125,6 @@
 	name = "tasseted belt"
 	icon_state = "steeltasset"
 	sellprice = 35
-	sewrepair = FALSE
-	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/storage/belt/rogue/leather/rope
 	name = "rope belt"
@@ -164,6 +163,9 @@
 	slot_flags = ITEM_SLOT_BELT
 
 /obj/item/storage/backpack/rogue/satchel
+	sewrepair = TRUE
+
+/obj/item/storage/backpack/rogue/satchel
 	name = "satchel"
 	desc = "Modest, easy on the shoulders, and holds a respectable amount."
 	icon_state = "satchel"
@@ -177,7 +179,6 @@
 	equip_sound = 'sound/blank.ogg'
 	bloody_icon_state = "bodyblood"
 	alternate_worn_layer = UNDER_CLOAK_LAYER
-	sewrepair = TRUE
 	component_type = /datum/component/storage/concrete/roguetown/satchel
 
 /obj/item/storage/backpack/rogue/satchel/heartfelt
@@ -247,7 +248,6 @@
 	sellprice = 15
 	equip_sound = 'sound/blank.ogg'
 	bloody_icon_state = "bodyblood"
-	sewrepair = TRUE
 	component_type = /datum/component/storage/concrete/roguetown/backpack
 
 /obj/item/storage/backpack/rogue/artibackpack
@@ -262,7 +262,6 @@
 	max_integrity = 300
 	equip_sound = 'sound/blank.ogg'
 	bloody_icon_state = "bodyblood"
-	sewrepair = FALSE
 	component_type = /datum/component/storage/concrete/roguetown/backpack
 
 /obj/item/storage/backpack/rogue/backpack/bagpack
@@ -272,7 +271,6 @@
 	item_state = "rucksack"
 	component_type = /datum/component/storage/concrete/roguetown/sack/bag
 	max_integrity = 100
-	sewrepair = TRUE
 	var/tied = FALSE
 
 /obj/item/storage/backpack/rogue/backpack/bagpack/attack_right(mob/user)
@@ -321,7 +319,6 @@
 	strip_delay = 20
 	var/max_storage = 5			//Javelin bag is 4 and they can't hold items. So, more fair having it like this since these are pretty decent weapons.
 	var/list/knives = list()
-	sewrepair = TRUE
 	component_type = /datum/component/storage/concrete/roguetown/belt/knife_belt
 
 /obj/item/storage/belt/rogue/leather/knifebelt/attack_turf(turf/T, mob/living/user)
@@ -425,7 +422,6 @@
 	desc = "A gold adorned belt with the softest of silks barely concealing one's bits."
 	icon_state = "exoticsilkbelt"
 	var/max_storage = 5
-	sewrepair = TRUE
 
 ///////////////////////////////////////////////
 
@@ -440,6 +436,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	max_integrity = 300
 	equip_sound = 'sound/blank.ogg'
+	dropshrink = 0.8
 	//content_overlays = FALSE
 	bloody_icon_state = "bodyblood"
 	anvilrepair = /datum/skill/craft/blacksmithing

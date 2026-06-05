@@ -333,7 +333,7 @@
 		pintle.functional = TRUE
 		had_disfunctional_pintle = TRUE
 
-	owner?.sexcon?.adjust_charge(SEX_MAX_CHARGE)
+	owner?.sexcon?.set_charge(owner?.sexcon?.get_max_charge())
 
 /datum/status_effect/buff/fermented_crab/on_remove()
 	. = ..()
@@ -346,6 +346,26 @@
 /atom/movable/screen/alert/status_effect/buff/fermented_crab
 	name = "INVIGORATED"
 	desc = "Fermented crab tasted like shit. But I'm full of vigor now!"
+
+/datum/status_effect/buff/cum_consumed
+	id = "cum_consumed"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/cum_consumed
+	duration = 10 MINUTES
+
+/datum/status_effect/buff/cum_consumed/on_apply()
+	. = ..()
+	if(owner.has_flaw(/datum/charflaw/addiction/lovefiend))
+		owner.add_stress(/datum/stressevent/cumconsumed)
+
+/datum/status_effect/buff/cum_consumed/on_remove()
+	if(owner.has_flaw(/datum/charflaw/addiction/lovefiend))
+		owner.remove_stress(/datum/stressevent/cumconsumed)
+	. = ..()
+
+/atom/movable/screen/alert/status_effect/buff/cum_consumed
+	name = "Cumdrunk"
+	desc = "I've swallowed someone's load..."
+	icon_state = "drunk"
 
 /atom/movable/screen/alert/status_effect/buff/vitae
 	name = "Invigorated"
@@ -1237,7 +1257,7 @@
 
 /datum/status_effect/buff/moonlightdance/on_remove()
 	. = ..()
-	to_chat(owner, span_warning("Noc's silver leaves my"))
+	to_chat(owner, span_warning("Noc's silver light leaves my sight."))
 	REMOVE_TRAIT(owner, TRAIT_DARKVISION, MAGIC_TRAIT)
 
 
@@ -1626,7 +1646,7 @@
 
 /datum/status_effect/buff/clash
 	id = "clash"
-	duration = 6 SECONDS
+	duration = 4 SECONDS
 	var/dur
 	var/sfx_on_apply = 'sound/combat/clash_initiate.ogg'
 	var/swingdelay_mod = 5
