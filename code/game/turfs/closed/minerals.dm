@@ -1,3 +1,7 @@
+#define ORE_TRACE 1
+#define ORE_NORMAL 2
+#define ORE_RICH 3
+
 /**********************Mineral deposits**************************/
 
 /turf/closed/mineral //wall piece
@@ -19,6 +23,8 @@
 	var/obj/item/natural/rock/rockType = null
 	var/mob/living/lastminer //for xp gain and luck shenanigans
 	var/mineralAmt = 3
+	var/ore_richness = 0
+	var/vein_generated = FALSE
 	var/spread = 0 //will the seam spread?
 	var/spreadChance = 0 //the percentual chance of an ore spreading to the neighbouring tiles
 	var/last_act = 0
@@ -45,15 +51,102 @@
 
 /turf/closed/mineral/LateInitialize()
 	. = ..()
-	if (mineralType && mineralAmt && spread && spreadChance)
-		for(var/dir in GLOB.cardinals)
-			if(prob(spreadChance))
-				var/turf/T = get_step(src, dir)
-				if(istype(T, /turf/closed/mineral/random))
-					Spread(T)
+
+	if(mineralType)
+		AssignRichness()
+
+	if(mineralType && spread > 1 && !vein_generated)
+		GrowVein()
+		vein_generated = TRUE
+
 	var/turf/open/transparent/openspace/target = get_step_multiz(src, UP)
 	if(istype(target))
 		target.ChangeTurf(/turf/open/floor/rogue/naturalstone)
+
+/turf/closed/mineral/proc/GetOreSightColor()
+	var/color
+	if(istype(src, /turf/closed/mineral/rogue/coal))
+		color = "#303030"
+
+	else if(istype(src, /turf/closed/mineral/rogue/iron))
+		color = "#4A4F50"
+
+	else if(istype(src, /turf/closed/mineral/rogue/copper))
+		color = "#7d4033"
+
+	else if(istype(src, /turf/closed/mineral/rogue/tin))
+		color = "#B3C192"
+
+	else if(istype(src, /turf/closed/mineral/rogue/cinnabar))
+		color = "#822020"
+
+	else if(istype(src, /turf/closed/mineral/rogue/gold))
+		color = "#C4BE87"
+
+	else if(istype(src, /turf/closed/mineral/rogue/silver))
+		color = "#C6D5E1"
+
+	else if(istype(src, /turf/closed/mineral/rogue/gem))
+		color = "#42E7E5"
+
+	return color
+
+/turf/closed/mineral/proc/GetOreSightState(skill_level)
+	switch(ore_richness)
+
+		if(ORE_TRACE)
+			return "weak"
+
+		if(ORE_NORMAL)
+			if(skill_level >= SKILL_LEVEL_JOURNEYMAN)
+				return "normal"
+			else
+				return "weak"
+
+		if(ORE_RICH)
+			if(skill_level >= SKILL_LEVEL_MASTER)
+				return "rich"
+			else
+				return "weak"
+
+	return null
+
+/turf/closed/mineral/proc/GrowVein()
+
+	vein_generated = TRUE
+	ore_richness = ORE_RICH
+
+	var/list/frontier = list(src)
+	var/list/visited = list(src)
+	var/remaining = spread
+	while(remaining > 0 && frontier.len)
+		var/turf/closed/mineral/current = pick(frontier)
+		frontier -= current
+		for(var/dir in GLOB.cardinals)
+			if(remaining <= 0)
+				break
+			if(!prob(spreadChance))
+				continue
+			var/turf/T = get_step(current, dir)
+			if(!istype(T, /turf/closed/mineral/random/rogue))
+				continue
+			if(T in visited)
+				continue
+			visited += T
+			var/turf/closed/mineral/newvein = T.ChangeTurf(type)
+			if(istype(newvein))
+				newvein.vein_generated = TRUE
+				newvein.AssignRichness()
+				frontier += newvein
+				remaining--
+
+/turf/closed/mineral/proc/AssignRichness()
+	if(prob(10))
+		ore_richness = ORE_RICH
+	else if(prob(40))
+		ore_richness = ORE_NORMAL
+	else
+		ore_richness = ORE_TRACE
 
 /turf/closed/mineral/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	if(turf_type)
@@ -142,13 +235,25 @@
 	new /obj/item/natural/stone(src)
 	if(prob(30))
 		new /obj/item/natural/stone(src)
-	if (mineralType && (mineralAmt > 0))
-		if(prob(33)) //chance to spawn ore directly
-			new mineralType(src)
-		if(rockType) //always spawn at least 1 rock
-			new rockType(src)
-			if(prob(23))
-				new rockType(src)
+	if(mineralType)
+		switch(ore_richness)
+			if(ORE_TRACE)
+				if(prob(15))
+					new mineralType(src)
+				if(rockType && prob(40))
+					new rockType(src)
+			if(ORE_NORMAL)
+				if(prob(40))
+					new mineralType(src)
+				if(rockType)
+					new rockType(src)
+			if(ORE_RICH)
+				new mineralType(src)
+				if(rockType)
+					new rockType(src)
+				if(prob(35))
+					new rockType(src)
+
 		SSblackbox.record_feedback("tally", "ore_mined", mineralAmt, mineralType)
 	else if(user?.goodluck(2))
 		var/newthing = pickweight(list(/obj/item/natural/rock/salt = 2, /obj/item/natural/rock/iron = 1, /obj/item/natural/rock/coal = 2))
@@ -187,8 +292,6 @@
 			gets_drilled(null, triggered_by_explosion = TRUE)
 	return
 
-/turf/closed/mineral/Spread(turf/T)
-	T.ChangeTurf(type)
 
 /turf/closed/mineral/random
 	///if this isn't empty, swaps to one of them via pickweight
@@ -352,71 +455,71 @@
 	icon_state = "mingold"
 	mineralType = /obj/item/rogueore/gold
 	rockType = /obj/item/natural/rock/gold
-	spreadChance = 5
-	spread = 1
+	spreadChance = 55
+	spread = 4
 
 /turf/closed/mineral/rogue/silver
 	icon_state = "mingold"
 	mineralType = /obj/item/rogueore/silver
 	rockType = /obj/item/natural/rock/silver
-	spreadChance = 5
-	spread = 1
+	spreadChance = 55
+	spread = 2	//silver has more practical uses, and is a weapon vs antags. We want deposits of it to be small.
 
 /turf/closed/mineral/rogue/salt
 	icon_state = "mingold"
 	mineralType = /obj/item/reagent_containers/powder/salt
 	rockType = /obj/item/natural/rock/salt
-	spreadChance = 33
-	spread = 15
+	spreadChance = 75
+	spread = 16
 
 /turf/closed/mineral/rogue/iron
 	icon_state = "mingold"
 	mineralType = /obj/item/rogueore/iron
 	rockType = /obj/item/natural/rock/iron
-	spreadChance = 23
-	spread = 5
+	spreadChance = 65
+	spread = 10
 
 /turf/closed/mineral/rogue/copper
 	icon_state = "mingold"
 	mineralType = /obj/item/rogueore/copper
 	rockType = /obj/item/natural/rock/copper
-	spreadChance = 27
-	spread = 8
+	spreadChance = 65
+	spread = 12
 
 /turf/closed/mineral/rogue/tin
 	icon_state = "mingold"
 	mineralType = /obj/item/rogueore/tin
 	rockType = /obj/item/natural/rock/tin
-	spreadChance = 15
-	spread = 5
+	spreadChance = 60
+	spread = 8
 
 /turf/closed/mineral/rogue/coal
 	icon_state = "mingold"
 	mineralType = /obj/item/rogueore/coal
 	rockType = /obj/item/natural/rock/coal
-	spreadChance = 33
-	spread = 11
+	spreadChance = 70
+	spread = 15
 
 /turf/closed/mineral/rogue/elementalmote //chance for elemental motes to drop, low, like with cinnabar
 	icon_state = "mingold"
 	mineralType = /obj/item/magic/elemental/mote
 	rockType = /obj/item/natural/rock/elementalmote
-	spreadChance = 23
-	spread = 5
+	spreadChance = 50
+	spread = 1
 
 /turf/closed/mineral/rogue/cinnabar
 	icon_state = "mingold"
 	mineralType = /obj/item/rogueore/cinnabar
 	rockType = /obj/item/natural/rock/cinnabar
-	spreadChance = 23
-	spread = 5
+	spreadChance = 60
+	spread = 8
 
 /turf/closed/mineral/rogue/gem
 	icon_state = "mingold"
 	mineralType = /obj/item/roguegem/random
 	rockType = /obj/item/natural/rock/gem
-	spreadChance = 3
-	spread = 2
+	spreadChance = 50
+	spread = 3
 
 /turf/closed/mineral/rogue/bedrock
 	name = "rock"

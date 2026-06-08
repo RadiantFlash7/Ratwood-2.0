@@ -19,39 +19,34 @@
 
 /obj/effect/proc_holder/spell/invoked/mineroresight/cast(list/targets, mob/living/user)
 	//show the miners what rock turfs are valuable
-	var/checkrange = (range + user.get_skill_level(/datum/skill/labor/mining)) //+1 range per mining skill up to a potential of 7.
-	for(var/turf/closed/mineral/rockturfs in view(checkrange,get_turf(user)))
-		if(istype(rockturfs, /turf/closed/mineral/random/rogue/med) || istype(rockturfs, /turf/closed/mineral/rogue/copper) || istype(rockturfs, /turf/closed/mineral/rogue/tin) || istype(rockturfs, /turf/closed/mineral/rogue/coal) || istype(rockturfs, /turf/closed/mineral/random/rogue/sandstone/med) || istype(rockturfs, /turf/closed/mineral/rogue/sandstone/copper) || istype(rockturfs, /turf/closed/mineral/rogue/sandstone/tin) || istype(rockturfs, /turf/closed/mineral/rogue/sandstone/coal))
-			found_ore(get_turf(rockturfs), user.client, "shieldsparkles")
-			//to_chat(user, span_warning("I see some medium quality stone"))
-		if(istype(rockturfs, /turf/closed/mineral/random/rogue/high) || istype(rockturfs, /turf/closed/mineral/rogue/cinnabar) || istype(rockturfs, /turf/closed/mineral/random/rogue/sandstone/high) || istype(rockturfs, /turf/closed/mineral/rogue/sandstone/iron) || istype(rockturfs, /turf/closed/mineral/rogue/iron) || istype(rockturfs, /turf/closed/mineral/rogue/sandstone/iron))
-			found_ore(get_turf(rockturfs), user.client, "sparks")
-			//to_chat(user, span_warning("I see some high quality stone"))
-		if(istype(rockturfs, /turf/closed/mineral/rogue/gold) || istype(rockturfs, /turf/closed/mineral/rogue/silver) || istype(rockturfs, /turf/closed/mineral/rogue/gem) || istype(rockturfs, /turf/closed/mineral/rogue/sandstone/gold) || istype(rockturfs, /turf/closed/mineral/rogue/sandstone/silver) || istype(rockturfs, /turf/closed/mineral/rogue/sandstone/gem))
-			found_ore(get_turf(rockturfs), user.client, "quantum_sparks")
-			//to_chat(user, span_warning("I see some GREAT quality stone"))
-		if(istype(rockturfs, /turf/closed/mineral/rogue/bedrock) || istype(rockturfs, /turf/closed/mineral/rogue/bedrock/sandstone))
-			found_ore(get_turf(rockturfs), user.client, "purplesparkles")
-			//to_chat(user, span_warning("I see stone too hard to hit"))
+	var/skill = user.get_skill_level(/datum/skill/labor/mining)
+	var/checkrange = (range + skill) //+1 range per mining skill up to a potential of 7.
+	for(var/turf/closed/mineral/M in view(checkrange, get_turf(user)))
+
+		if(istype(M, /turf/closed/mineral/rogue/bedrock))
+			found_ore(get_turf(M), user.client, "purplesparkles")
+			continue
+
+		var/effect = M.GetOreSightState(skill)
+		var/effect = M.GetOreSightColor()
+		if(effect && M.mineralType)
+			found_ore(get_turf(M), user.client, effect)
 
 	//show the miners what boulders are valuable
-	for(var/obj/item/natural/rock/boulderobjs in view(7,get_turf(user)))
-		if(istype(boulderobjs, /obj/item/natural/rock/copper) || istype(boulderobjs, /obj/item/natural/rock/tin) || istype(boulderobjs, /obj/item/natural/rock/coal))
-			found_ore(get_turf(boulderobjs), user.client, "shieldsparkles")
-			//to_chat(user, span_warning("I see some medium quality boulders"))
-		if(istype(boulderobjs, /obj/item/natural/rock/cinnabar) || istype(boulderobjs, /obj/item/natural/rock/iron))
-			found_ore(get_turf(boulderobjs), user.client, "sparks")
-			//to_chat(user, span_warning("I see some high quality boulders"))
-		if(istype(boulderobjs, /obj/item/natural/rock/gold) || istype(boulderobjs, /obj/item/natural/rock/silver) || istype(boulderobjs, /obj/item/natural/rock/gem))
-			found_ore(get_turf(boulderobjs), user.client, "quantum_sparks")
-			//to_chat(user, span_warning("I see some GREAT quality boulders"))
+	for(var/obj/item/natural/rock/B in view(7, get_turf(user)))
 
-/proc/found_ore(atom/A, client/C, state)
+		var/state = B.GetOreSightState()
+		var/effect = M.GetOreSightColor()
+		if(state)
+			found_ore(get_turf(B), user.client, state, color)
+
+/proc/found_ore(atom/A, client/C, state, color)
 	if(!A || !C || !state)
 		return
 	var/image/I = image(icon = 'icons/effects/effects.dmi', loc = A, icon_state = state, layer = 18)
 	I.layer = 18
 	I.plane = 18
+	I.color = color
 	if(!I)
 		return
 	I.mouse_opacity = MOUSE_OPACITY_TRANSPARENT

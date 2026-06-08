@@ -498,6 +498,40 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 /obj/item/natural/rock/gem
 	mineralType = /obj/item/roguegem/random
 
+/obj/item/natural/rock/proc/GetOreSightColor()
+	var/color
+	if(istype(src, /obj/item/natural/rock/coal))
+		color = "#303030"
+
+	else if(istype(src, /obj/item/natural/rock/iron))
+		color = "#4A4F50"
+
+	else if(istype(src, /obj/item/natural/rock/copper))
+		color = "#7d4033"
+
+	else if(istype(src, /obj/item/natural/rock/tin))
+		color = "#B3C192"
+
+	else if(istype(src, /obj/item/natural/rock/cinnabar))
+		color = "#822020"
+
+	else if(istype(src, /obj/item/natural/rock/gold))
+		color = "#C4BE87"
+
+	else if(istype(src, /obj/item/natural/rock/silver))
+		color = "#C6D5E1"
+
+	else if(istype(src, /obj/item/natural/rock/gem))
+		color = "#42E7E5"
+
+	return color
+
+/obj/item/natural/rock/proc/GetOreSightState()
+	if(subtypesof(/obj/item/natural/rock))
+		return "normal"
+	else
+		return null
+
 /obj/item/natural/rock/random_ore
 	name = "rock?"
 	desc = "Wait, this shouldn't be here?"
