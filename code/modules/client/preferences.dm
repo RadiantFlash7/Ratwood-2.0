@@ -39,6 +39,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 										//autocorrected this round, not that you'd need to check that.
 
 	var/UI_style = null
+	var/hud_colorblind_palette = HUD_COLORBLIND_NONE
 	var/buttons_locked = TRUE
 	var/hotkeys = TRUE
 
@@ -117,6 +118,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/chastity_hardmode = CHASTITY_HARDMODE_DISABLED
 	var/extreme_erp = FALSE
 	var/edging = FALSE
+	/// If a cursed collar can be equipped to them at all
+	var/cursed_collarable = FALSE
 	var/compliance_notifs = TRUE
 	var/skillcap_notifs = TRUE
 	var/restricted_species_pref = null
@@ -408,6 +411,18 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	save_character()		//let's save this new random character so it doesn't keep generating new ones.
 	menuoptions = list()
 	return
+
+/datum/preferences/proc/get_roguehud_icon()
+	return roguehud_icon_for_palette(hud_colorblind_palette)
+
+/datum/preferences/proc/get_rogueheat_icon()
+	return rogueheat_icon_for_palette(hud_colorblind_palette)
+
+/datum/preferences/proc/set_hud_colorblind_palette(new_palette)
+	if(!is_hud_colorblind_palette(new_palette))
+		return FALSE
+	hud_colorblind_palette = new_palette
+	return TRUE
 
 /datum/preferences/proc/set_new_race(datum/species/new_race, user)
 	pref_species = new_race
@@ -2652,7 +2667,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					if(pickedui)
 						UI_style = "Rogue"
 						if (parent && parent.mob && parent.mob.hud_used)
-							parent.mob.hud_used.update_ui_style(ui_style2icon(UI_style))
+							parent.mob.hud_used.update_ui_style(ui_style2icon(UI_style, src))
 				if("pda_style")
 					var/pickedPDAStyle = input(user, "Choose your PDA style.", "Character Preference", pda_style)  as null|anything in GLOB.pda_styles
 					if(pickedPDAStyle)
@@ -2877,7 +2892,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					else
 						user.stop_sound_channel(CHANNEL_LOBBYMUSIC)
 
-				if("ghost_ears")
+/* 				if("ghost_ears")
 					chat_toggles ^= CHAT_GHOSTEARS
 
 				if("ghost_sight")
@@ -2890,7 +2905,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					chat_toggles ^= CHAT_GHOSTRADIO
 
 				if("ghost_pda")
-					chat_toggles ^= CHAT_GHOSTPDA
+					chat_toggles ^= CHAT_GHOSTPDA */
 
 				if("income_pings")
 					chat_toggles ^= CHAT_BANKCARD
@@ -2948,6 +2963,9 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					return
 
 				if("observe")
+					if(is_banned_from(user.ckey, "Observer"))
+						to_chat(user, span_danger("You are banned from observing."))
+						return
 					var/mob/dead/new_player/P = user
 					P.make_me_an_observer()
 					return
@@ -3103,11 +3121,11 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 	if(charflaw)
 		var/obj/item/bodypart/O = character.get_bodypart(BODY_ZONE_R_ARM)
 		if(O)
-			O.drop_limb()
+			O.drop_limb(TRUE)
 			qdel(O)
 		O = character.get_bodypart(BODY_ZONE_L_ARM)
 		if(O)
-			O.drop_limb()
+			O.drop_limb(TRUE)
 			qdel(O)
 		character.regenerate_limb(BODY_ZONE_R_ARM)
 		character.regenerate_limb(BODY_ZONE_L_ARM)
@@ -3274,7 +3292,11 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		character.update_hair()
 		character.update_body_parts(redraw = TRUE)
 
-	character.char_accent = char_accent
+	if (character.char_accent in GLOB.character_accents)
+		character.char_accent = char_accent
+	else
+		char_accent = "No accent"
+		character.char_accent = char_accent
 
 	if(culinary_preferences)
 		apply_culinary_preferences(character)

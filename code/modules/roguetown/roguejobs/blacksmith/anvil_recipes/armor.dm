@@ -108,22 +108,42 @@
 // DECREPIT/ANCIENT ALLOY
 
 /datum/anvil_recipe/armor/ancient/barbute
-	name = "Barbute, Decrepit (+1 Gilbranze)"
+	name = "Barbute, Ancient (+1 Gilbranze)"
+	additional_items = list(/obj/item/ingot/gilbranze)
 	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/ancient
-	additional_items = /obj/item/ingot/decrepit
 
 /datum/anvil_recipe/armor/decrepit/barbute
 	name = "Barbute, Decrepit (+1 Alloy)"
+	additional_items = list(/obj/item/ingot/decrepit)
 	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/ancient/decrepit
 
 /datum/anvil_recipe/armor/ancient/savoyard
 	name = "Savoyard, Ancient (+1 Gilbranze)"
+	additional_items = list(/obj/item/ingot/gilbranze)
 	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/guard/ancient
-	additional_items = /obj/item/ingot/gilbranze
 
 /datum/anvil_recipe/armor/decrepit/savoyard
 	name = "Savoyard, Decrepit (+1 Alloy)"
+	additional_items = list(/obj/item/ingot/decrepit)
 	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/guard/ancient/decrepit
+
+/datum/anvil_recipe/armor/ancient/bascinet
+	name = "Bascinet, Ancient (+1 Gilbranze)"
+	additional_items = list(/obj/item/ingot/gilbranze)
+	created_item = 	/obj/item/clothing/head/roguetown/helmet/heavy/knight/ancient
+
+/datum/anvil_recipe/armor/decrepit/bascinet
+	name = "Bascinet, Decrepit (+1 Alloy)"
+	additional_items = list(/obj/item/ingot/decrepit)
+	created_item = 	/obj/item/clothing/head/roguetown/helmet/heavy/knight/ancient/decrepit
+
+/datum/anvil_recipe/armor/ancient/helmetkettle
+	name = "Kettle Helmet, Ancient"
+	created_item = /obj/item/clothing/head/roguetown/helmet/kettle/ancient
+
+/datum/anvil_recipe/armor/decrepit/helmetkettle
+	name = "Kettle Helmet, Decrepit"
+	created_item = /obj/item/clothing/head/roguetown/helmet/kettle/ancient/decrepit
 
 /datum/anvil_recipe/armor/ancient/mask
 	name = "Mask, Ancient"
@@ -408,8 +428,8 @@
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate
 
 /datum/anvil_recipe/armor/steel/halfplate/fluted
-	name = "Fluted Half-Plate, Steel (+1 Cuirass, Steel +1 Iron, +2 Cured Leather)"
-	additional_items = list(/obj/item/clothing/suit/roguetown/armor/plate/half, /obj/item/natural/hide/cured, /obj/item/ingot/iron, /obj/item/natural/hide/cured)
+	name = "Fluted Half-Plate, Steel (+1 Fluted Cuirass, Steel +1 Iron, +2 Cured Leather)"
+	additional_items = list(/obj/item/clothing/suit/roguetown/armor/plate/half/fluted, /obj/item/natural/hide/cured, /obj/item/ingot/iron, /obj/item/natural/hide/cured)
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/fluted
 
 /datum/anvil_recipe/armor/steel/fullplate

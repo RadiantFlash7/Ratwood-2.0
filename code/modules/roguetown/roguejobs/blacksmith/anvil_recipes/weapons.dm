@@ -290,6 +290,12 @@
 	req_blade = /obj/item/blade/iron_sword
 	created_item = /obj/item/rogueweapon/sword/short/messer/iron
 
+/datum/anvil_recipe/weapons/iron/shotel
+	name = "Shotel, Iron (+1 Iron)"
+	req_blade = /obj/item/blade/iron_sword
+	additional_items = list(/obj/item/ingot/iron)
+	created_item = /obj/item/rogueweapon/sword/long/shotel/iron
+
 /datum/anvil_recipe/weapons/iron/sabre
 	name = "Sabre, Iron"
 	req_blade = /obj/item/blade/iron_sword
@@ -406,6 +412,16 @@
 	created_item = /obj/item/rogueweapon/mace/maul
 	craftdiff = 4
 
+/datum/anvil_recipe/weapons/iron/peasantwarflail
+	name = "War Flail, Iron (+1 Iron, +2 Small Log)"
+	additional_items = list(/obj/item/ingot/iron, /obj/item/grown/log/tree/small, /obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/flail/peasantwarflail
+
+/datum/anvil_recipe/weapons/iron/maciejowski
+	name = "Maciejowski, Iron (+1 Iron)"
+	additional_items = list(/obj/item/ingot/iron)
+	created_item = /obj/item/rogueweapon/sword/falchion/militia
+
 /// STEEL WEAPONS
 /datum/anvil_recipe/weapons/steel/dagger
 	name = "Dagger, Steel"
@@ -472,6 +488,16 @@
 	req_blade = /obj/item/blade/steel_sword
 	created_item = /obj/item/rogueweapon/sword/sabre
 
+/datum/anvil_recipe/weapons/steel/shamshir
+	name = "Shamshir, Steel"
+	req_blade = /obj/item/blade/steel_sword
+	created_item = /obj/item/rogueweapon/sword/sabre/shamshir
+
+/datum/anvil_recipe/weapons/steel/hook
+	name = "Hook Sword, Steel"
+	req_blade = /obj/item/blade/steel_sword
+	created_item = /obj/item/rogueweapon/sword/sabre/hook
+
 /datum/anvil_recipe/weapons/steel/flail
 	name = "Flail, Steel"
 	req_blade = /obj/item/blade/steel_sword
@@ -482,6 +508,18 @@
 	req_blade = /obj/item/blade/steel_sword
 	additional_items = list(/obj/item/ingot/steel)
 	created_item = /obj/item/rogueweapon/sword/long
+
+/datum/anvil_recipe/weapons/steel/shalal
+	name = "Shalal Saber, Steel (+1 Steel)"
+	req_blade = /obj/item/blade/steel_sword
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/rogueweapon/sword/long/marlin
+
+/datum/anvil_recipe/weapons/steel/shotel
+	name = "Shotel, Steel (+1 Steel)"
+	req_blade = /obj/item/blade/steel_sword
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/rogueweapon/sword/long/shotel
 
 /datum/anvil_recipe/weapons/steel/trainingsword
 	name = "Training Sword, Steel (+1 Steel)"
@@ -818,6 +856,26 @@
 	additional_items = list(/obj/item/ingot/decrepit, /obj/item/natural/hide/cured)
 	created_item = /obj/item/rogueweapon/shield/tower/metal/ancient/decrepit
 
+/datum/anvil_recipe/weapons/ancient/shield
+	name = "Hoplon Shield, Ancient (+1 Gilbranze)"
+	additional_items = list(/obj/item/ingot/gilbranze)
+	created_item = /obj/item/rogueweapon/shield/gilbranze
+
+/datum/anvil_recipe/weapons/decrepit/shield
+	name = "Hoplon Shield, Decrepit (+1 Alloy)"
+	additional_items = list(/obj/item/ingot/decrepit)
+	created_item = /obj/item/rogueweapon/shield/gilbranze/decrepit
+
+/datum/anvil_recipe/weapons/ancient/shield
+	name = "Hoplon Greatshield, Ancient (+3 Gilbranze, +1 Cured Leather)"
+	additional_items = list(/obj/item/ingot/gilbranze, /obj/item/ingot/gilbranze, /obj/item/ingot/gilbranze, /obj/item/natural/hide/cured)
+	created_item = /obj/item/rogueweapon/shield/gilbranze/great
+
+/datum/anvil_recipe/weapons/decrepit/shield
+	name = "Hoplon Greatshield, Decrepit (+3 Alloy, +1 Cured Leather)"
+	additional_items = list(/obj/item/ingot/decrepit, /obj/item/ingot/decrepit, /obj/item/ingot/decrepit, /obj/item/natural/hide/cured)
+	created_item = /obj/item/rogueweapon/shield/gilbranze/great/decrepit
+
 /datum/anvil_recipe/weapons/steel/buckler
 	name = "Buckler (+1 Steel)"
 	additional_items = list(/obj/item/ingot/steel)
@@ -826,7 +884,12 @@
 /datum/anvil_recipe/weapons/ancient/buckler
 	name = "Buckler, Ancient (+1 Gilbranze)"
 	additional_items = list(/obj/item/ingot/gilbranze)
-	created_item = /obj/item/rogueweapon/shield/buckler
+	created_item = /obj/item/rogueweapon/shield/buckler/ancient
+
+/datum/anvil_recipe/weapons/decrepit/buckler
+	name = "Buckler, Decrepit (+1 Gilbranze)"
+	additional_items = list(/obj/item/ingot/decrepit)
+	created_item = /obj/item/rogueweapon/shield/buckler/ancient/decrepit
 
 /datum/anvil_recipe/weapons/iron/roundshield
 	name = "Shield, Iron (+1 Iron)"

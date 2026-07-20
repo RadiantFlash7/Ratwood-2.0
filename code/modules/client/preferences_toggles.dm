@@ -84,6 +84,15 @@
 		list("id" = "grain", "label" = "Grain Effect", "enabled" = !!owner.prefs.grain, "desc" = "Overlay a subtle film grain effect."),
 		list("id" = "tgui_multiline", "label" = "TGUI Multiline", "enabled" = !!owner.mob?.tgui_multiline, "desc" = "Use multiline TGUI input where supported."),
 	)
+	var/list/graphics_selects = list(
+		list(
+			"id" = "hud_colorblind_palette",
+			"label" = "HUD Colorblind Palette",
+			"value" = owner.prefs.hud_colorblind_palette,
+			"desc" = "Swap the Rogue HUD and heat HUD icons to a higher-contrast colorblind palette.",
+			"options" = hud_colorblind_palette_options(),
+		),
+	)
 
 	var/list/character_entries = list(
 		list("id" = "masked_examine", "label" = "Masked Examine", "enabled" = !!owner.prefs.masked_examine, "desc" = "Allow your character info to be seen while masked."),
@@ -127,11 +136,12 @@
 		list("id" = "permanent_binding", "label" = "Enable Permanent Binding", "enabled" = (owner.prefs.chastity_hardmode == CHASTITY_HARDMODE_ENABLED), "desc" = "Enable irreversible key-only chastity lock behavior."),
 		list("id" = "extreme_erp", "label" = "Enable Extreme ERP Content", "enabled" = !!owner.prefs.extreme_erp, "desc" = "Allow extreme ERP content categories."),
 		list("id" = "edging", "label" = "Enable Edging Content", "enabled" = !!owner.prefs.edging, "desc" = "Allow edging-related ERP content."),
+		list("id" = "cursed_collars", "label" = "Enable Cursed Collars", "enabled" = !!owner.prefs.cursed_collarable, "desc" = "Allow others to equip a cursed collar on you."),
 	)
 
 	data["categories"] = list(
 		list("name" = "Character", "entries" = character_entries),
-		list("name" = "Graphics", "entries" = graphics_entries),
+		list("name" = "Graphics", "entries" = graphics_entries, "selects" = graphics_selects),
 		list("name" = "Visuals", "entries" = visual_entries),
 		list("name" = "Gameplay", "entries" = gameplay_entries),
 		list("name" = "Audio", "entries" = audio_entries),
@@ -204,6 +214,8 @@
 			if("hear_instruments")
 				owner.prefs.toggles ^= SOUND_INSTRUMENTS
 				owner.prefs.save_preferences()
+				for(var/datum/looping_sound/persistent_loop in GLOB.persistent_sound_loops)
+					owner.update_persistent_sound_loop(persistent_loop)
 				owner.update_sounds()
 				owner.sync_instrument_audio_toggle()
 			if("animal_emotes")
@@ -218,6 +230,19 @@
 				owner.toggle_extreme_ERP()
 			if("edging")
 				owner.toggle_edging()
+			if("cursed_collars")
+				owner.toggle_cursed_collars()
+		SStgui.update_uis(src)
+		return TRUE
+
+	if(action == "select")
+		var/select_id = params["id"]
+		switch(select_id)
+			if("hud_colorblind_palette")
+				if(!owner.prefs.set_hud_colorblind_palette(params["value"]))
+					return FALSE
+				owner.prefs.save_preferences()
+				owner.refresh_colorblind_hud_palette()
 		SStgui.update_uis(src)
 		return TRUE
 
@@ -428,6 +453,26 @@
 			to_chat(src, "You ENDVRE through orgasms.")
 		else
 			to_chat(src, "You will no longer ENDVRE through orgasms.")
+
+/client/verb/toggle_cursed_collars() // Toggles cursed collars. Will drop existing collars if toggled off while wearing one
+	set category = "Options"
+	set name = "Toggle Cursed Collars"
+	set hidden = 1
+	if(!prefs)
+		return
+	prefs.cursed_collarable = !prefs.cursed_collarable
+	prefs.save_preferences()
+	if(prefs.cursed_collarable)
+		to_chat(src, "You can now be collared.")
+		return
+	to_chat(src, "You are no longer able to be collared")
+	if(!ishuman(usr))
+		return
+	var/mob/living/carbon/human/human_user = usr
+	var/obj/item/clothing/neck/roguetown/cursed_collar/collar = human_user.wear_neck
+	if(!istype(collar))
+		return
+	collar.dropped(human_user)
 
 /client/verb/toggle_compliance_notifs() // The messages need to be on-by-default while this is in its early stages.
 	set category = "Options"
