@@ -13,7 +13,7 @@
 		STATKEY_SPD = 2,
 		STATKEY_LCK = 1
 	)
-
+	age_mod = /datum/class_age_mod/witch
 	subclass_skills = list(
 		/datum/skill/misc/reading = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/alchemy = SKILL_LEVEL_EXPERT,
@@ -45,10 +45,6 @@
 						/obj/item/recipe_book/magic = 1,
 						/obj/item/chalk = 1
 						)
-	if(H.age == AGE_MIDDLEAGED)
-		H.adjust_skillrank_up_to(/datum/skill/craft/alchemy, 5, TRUE)
-	if(H.age == AGE_OLD)
-		H.adjust_skillrank_up_to(/datum/skill/craft/alchemy, 6, TRUE)
 
 	var/hats = list(
 		"Witch Hat" 		= /obj/item/clothing/head/roguetown/witchhat,

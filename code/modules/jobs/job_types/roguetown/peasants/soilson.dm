@@ -42,6 +42,7 @@
 		STATKEY_SPD = 1,
 		STATKEY_INT = -1,//simple and honest
 	)
+	age_mod = /datum/class_age_mod/soilson
 	subclass_skills = list(
 		/datum/skill/combat/whipsflails = SKILL_LEVEL_NOVICE,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
@@ -77,9 +78,6 @@
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/flint = 1,
 		)
-	if(H.age == AGE_OLD)//So ppl have reason to pick this I guess?
-		H.adjust_skillrank_up_to(/datum/skill/labor/farming, 6, TRUE)
-		H.adjust_skillrank_up_to(/datum/skill/labor/butchering, 6, TRUE)
 
 	if(should_wear_femme_clothes(H))
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random

@@ -53,6 +53,7 @@
 		STATKEY_WIL = 1,
 		STATKEY_SPD = 1
 	)
+	age_mod = /datum/class_age_mod/apprentice_associate
 	subclass_spellpoints = 21
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
@@ -81,11 +82,6 @@
 		/obj/item/recipe_book/magic = 1,
 		/obj/item/chalk = 1,
 		)
-	if(H.age == AGE_OLD)
-		H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
-		H.change_stat(STATKEY_SPD, -1)
-		H.change_stat(STATKEY_INT, 1)
-		H.mind?.adjust_spellpoints(6)
 	switch(H.patron?.type)
 		if(/datum/patron/inhumen/zizo)
 			H.cmode_music = 'sound/music/combat_heretic.ogg'
@@ -102,6 +98,7 @@
 		STATKEY_PER = 2,
 		STATKEY_WIL = 1
 	)
+	age_mod = /datum/class_age_mod/apprentice_alchemist
 	subclass_spellpoints = 18
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
@@ -136,11 +133,6 @@
 		/obj/item/spellbook_unfinished/pre_arcyne = 1,
 		/obj/item/rogueweapon/sickle
 		)
-	if(H.age == AGE_OLD)
-		H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
-		H.change_stat(STATKEY_PER, -1)
-		H.change_stat(STATKEY_INT, 1)
-		H.mind?.adjust_spellpoints(3)//split studies, less magic
 	switch(H.patron?.type)
 		if(/datum/patron/inhumen/zizo)
 			H.cmode_music = 'sound/music/combat_heretic.ogg'
@@ -168,6 +160,7 @@
 		STATKEY_WIL = 2,
 		STATKEY_SPD = 1,
 	)
+	age_mod = /datum/class_age_mod/apprentice_apprentice
 	subclass_spellpoints = 18
 	subclass_skills = list(
 		/datum/skill/misc/reading = SKILL_LEVEL_EXPERT,

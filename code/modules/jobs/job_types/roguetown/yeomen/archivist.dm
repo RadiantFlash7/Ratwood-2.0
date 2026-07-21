@@ -65,6 +65,7 @@
 		STATKEY_CON = -1,
 		STATKEY_STR = -1
 	)
+	age_mod = /datum/class_age_mod/archivist
 	subclass_spellpoints = 12
 	subclass_skills = list(
 		/datum/skill/misc/reading = SKILL_LEVEL_LEGENDARY,
@@ -117,6 +118,3 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/takeapprentice)
 		if(H.patron.type == /datum/patron/inhumen/zizo)
 			H.grant_language(/datum/language/undead)
-	if(H.age == AGE_OLD)
-		H.change_stat(STATKEY_SPD, -1)
-		H.change_stat(STATKEY_INT, 1)

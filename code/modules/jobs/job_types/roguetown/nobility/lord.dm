@@ -148,6 +148,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		STATKEY_SPD = 1,
 		STATKEY_STR = 1,
 	)
+	age_mod = /datum/class_age_mod/grand_duke
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
@@ -167,8 +168,6 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	..()
 	l_hand = /obj/item/rogueweapon/lordscepter
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/seal/crown = 1)
-	if(H.age == AGE_OLD)
-		H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 
 /**
 	Merchant Lord subclass. Consider this an evolution from Sheltered Aristocrat.

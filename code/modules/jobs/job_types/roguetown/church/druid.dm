@@ -44,6 +44,7 @@
 		STATKEY_SPD = 1,
 		STATKEY_PER = -1
 	)
+	age_mod = /datum/class_age_mod/druid
 	subclass_skills = list(
 		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/tanning = SKILL_LEVEL_NOVICE,
@@ -87,9 +88,6 @@
 	id = /obj/item/clothing/neck/roguetown/psicross/dendor //Ring slot amulet for wildform so it is not dropping on the ground.
 	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/dendor
 	backpack_contents = list(/obj/item/ritechalk, /obj/item/storage/keyring/churchie, /obj/item/seeds/treesap)
-	if(H.age == AGE_OLD)
-		H.adjust_skillrank_up_to(/datum/skill/magic/holy, 5, TRUE)
-		H.adjust_skillrank_up_to(/datum/skill/magic/druidic, 5, TRUE)
 	H.ambushable = FALSE
 
 /datum/outfit/job/roguetown/druid/basic/choose_loadout(mob/living/carbon/human/H)

@@ -13,6 +13,7 @@
 		STATKEY_SPD = 1,
 	)
 	subclass_spellpoints = 15
+	age_mod = /datum/class_age_mod/adv_mage
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE,
@@ -52,8 +53,6 @@
 		/obj/item/chalk = 1
 		)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
-	if(H.age == AGE_OLD)
-		H.mind?.adjust_spellpoints(6)
 	H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander4.ogg'
 	switch(H.patron?.type)
 		if(/datum/patron/inhumen/zizo)

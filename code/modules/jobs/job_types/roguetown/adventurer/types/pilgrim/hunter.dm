@@ -14,6 +14,7 @@
 		STATKEY_INT = 1,
 		STATKEY_SPD = 1
 	)
+	age_mod = /datum/class_age_mod/hunter
 	subclass_skills = list(
 		/datum/skill/combat/swords = SKILL_LEVEL_NOVICE,
 		/datum/skill/combat/axes = SKILL_LEVEL_NOVICE,

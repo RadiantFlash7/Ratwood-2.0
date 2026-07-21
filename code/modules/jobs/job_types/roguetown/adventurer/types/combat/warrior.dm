@@ -405,6 +405,7 @@
 		STATKEY_PER = 2,
 		STATKEY_WIL = 1,
 	) //Follows the Adventurer's seven-point statblock rule. Adds an eighth point to an unoccupied statkey, when a discipline is selected.
+	age_mod = /datum/class_age_mod/exorcist
 	subclass_skills = list(
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
@@ -561,7 +562,7 @@
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/rogueweapon/huntingknife = 1, //Ensures that Exorcists who take the Shovel can still butcher wildlife. Minor oversight on my part.
 		)
-	var/cross = list("The Pantheon Arisen", "The Old God Mourning") 
+	var/cross = list("The Pantheon Arisen", "The Old God Mourning")
 	var/cross_choice = input(H, "Whose symbol you bear?", "CHOOSE YOUR TOOL.") as anything in cross
 	switch(cross_choice)
 		if("The Pantheon Arisen")
@@ -569,15 +570,6 @@
 		if("The Old God Mourning")
 			wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 
-	if(H.age == AGE_OLD)
-		H.change_stat(STATKEY_INT, 1)
-		H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
-	//Old people get the option to become glass cannons. Expert Knives + Expert in their chosen weapon, but a permenant -I STR, -I PER, -2 SPD and -2 CON debuff.
 /datum/advclass/sfighter/amazon
 	name = "Amazon"
 	tutorial = "Fierce warrior women from distant lands, Amazons choose their armor based on their preferred fighting style - from light and agile to heavily protected."
@@ -754,7 +746,7 @@
 			H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)			
+			H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
@@ -801,7 +793,7 @@
 			H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)	//Funny nerf because I can in fact stop you. No double shield meta for you.		
+			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)	//Funny nerf because I can in fact stop you. No double shield meta for you.
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)

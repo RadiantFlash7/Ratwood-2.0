@@ -37,6 +37,7 @@
 		STATKEY_STR = 1,
 		STATKEY_INT = 1
 	)
+	age_mod = /datum/class_age_mod/cook
 	subclass_skills = list(
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
@@ -76,14 +77,3 @@
 		/obj/item/recipe_book/survival,
 		/obj/item/mini_flagpole/innkeeper,
 	)
-
-/datum/outfit/job/roguetown/cook/choose_loadout(mob/living/carbon/human/H)
-	. = ..()
-	if(H.age == AGE_MIDDLEAGED)
-		H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
-	if(H.age == AGE_OLD)
-		H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
