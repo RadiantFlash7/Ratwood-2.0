@@ -96,6 +96,10 @@
 		. += span_info("This is <EM>[name]</EM>.")
 	else if(obscure_name)
 		. += span_info("This is an unknown <EM>[name]</EM>.")
+		if(HAS_TRAIT(user, TRAIT_HERETIC_SEER))
+			var/heretic_text = get_heretic_text(user)
+			if(heretic_text)
+				. += span_notice(heretic_text)
 	else
 		on_examine_face(user)
 		var/used_name = name
@@ -383,6 +387,11 @@
 			else if(user.stat == DEAD)
 				. += span_danger("This was their only chance at lyfe.")
 
+	if(has_flaw(/datum/charflaw/hunted) && ishuman(user) && istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = user
+		if(H.dna?.species?.type == /datum/species/gnoll)
+			. += span_cultsmall("Graggar has marked them!")
+
 	// Real medical role can tell at a glance it is a waste of time, but only if the Necra message don't come first.
 
 	if(user.get_skill_level(/datum/skill/misc/medicine) >= SKILL_LEVEL_EXPERT && src.stat == DEAD)
@@ -455,7 +464,7 @@
 					var/shit = bD.examine_friendorfoe(aD,user,src)
 					if(shit)
 						. += shit
-		if(user.mind?.has_antag_datum(/datum/antagonist/vampire) || user.mind?.has_antag_datum(/datum/antagonist/vampire))
+		if(user.mind?.has_antag_datum(/datum/antagonist/vampire) && can_be_blood_drunk())
 			. += span_userdanger("<a href='?src=[REF(src)];task=bloodpoolinfo;'>Vitae: [(mind && !clan) ? (bloodpool * CLIENT_VITAE_MULTIPLIER) : bloodpool]; Blood: [blood_volume]</a>")
 
 	if(wear_shirt && !(SLOT_SHIRT in obscured))
@@ -1101,18 +1110,20 @@
 			if(femgen)
 				. += span_info(femgen)
 
-	// Print out branding
-	for(var/obj/item/bodypart/branded_bodypart as anything in bodyparts)
-		if(length(branded_bodypart.branded_writing) && get_location_accessible(src, branded_bodypart.body_zone))
-			. += span_info("[capitalize(m2)] [LOWER_TEXT(branded_bodypart.name)] has been branded with ") + "[span_boldwarning(branded_bodypart.branded_writing)]."
-		if(istype(branded_bodypart, /obj/item/bodypart/chest))
-			var/obj/item/bodypart/chest/buttocks = branded_bodypart
-			if(length(buttocks.branded_writing_on_buttocks) && get_location_accessible(src, BODY_ZONE_PRECISE_GROIN))
-				. += span_info("[capitalize(m2)] hindquarters has been branded with ") + "[span_boldwarning(buttocks.branded_writing_on_buttocks)]."
-		else if(istype(branded_bodypart, /obj/item/bodypart/head))
-			var/obj/item/bodypart/head/neck = branded_bodypart
-			if(length(neck.branded_writing_on_neck) && get_location_accessible(src, BODY_ZONE_PRECISE_NECK))
-				. += span_info("[capitalize(m2)] neck has been branded with ") + "[span_boldwarning(neck.branded_writing_on_neck)]."
+	if(branded) // we are branded, now check what bodypart brands we've got. genital brands handled separately.
+		for(var/obj/item/bodypart/branded_bodypart as anything in bodyparts)
+			if(length(branded_bodypart.branded_writing) && get_location_accessible(src, branded_bodypart.body_zone))
+				. += span_info("[capitalize(m2)] [LOWER_TEXT(branded_bodypart.name)] has been branded with ") + "[span_boldwarning(branded_bodypart.branded_writing)]."
+			if(istype(branded_bodypart, /obj/item/bodypart/chest))
+				var/obj/item/bodypart/chest/chest = branded_bodypart
+				if(length(chest.branded_writing_on_buttocks) && get_location_accessible(src, BODY_ZONE_PRECISE_GROIN))
+					. += span_info("[capitalize(m2)] hindquarters has been branded with ") + "[span_boldwarning(chest.branded_writing_on_buttocks)]."
+				if(length(chest.branded_writing_on_stomach) && get_location_accessible(src, BODY_ZONE_PRECISE_STOMACH))
+					. += span_info("[capitalize(m2)] stomach has been branded with ") + "[span_boldwarning(chest.branded_writing_on_stomach)]."
+			else if(istype(branded_bodypart, /obj/item/bodypart/head))
+				var/obj/item/bodypart/head/neck = branded_bodypart
+				if(length(neck.branded_writing_on_neck) && get_location_accessible(src, BODY_ZONE_PRECISE_NECK))
+					. += span_info("[capitalize(m2)] neck has been branded with ") + "[span_boldwarning(neck.branded_writing_on_neck)]."
 
 	// Characters with the marked for death flaw will freak out if they can't see someone's face.
 	if(!appears_dead)
@@ -1132,9 +1143,9 @@
 
 	if(temporary_flavortext) //should be kept at the bottom always if possible, since someone could change the spans to trick people if it's on other places
 		var/max_temp_ft_length = 100 //Proably a good idea to fine-tune this later
-		if(length_char(temporary_flavortext) > max_temp_ft_length) 
+		if(length_char(temporary_flavortext) > max_temp_ft_length)
 			. += " <span class='info' style='color: #eaeaea'> ø ------------ ø\n [copytext_char(temporary_flavortext, 1, max_temp_ft_length + 1)]</span>" + "<a href='?src=[REF(src)];task=show_temp_ft;'>...</a>"
-		else 
+		else
 			. += " <span class='info' style='color: #eaeaea'> ø ------------ ø\n [temporary_flavortext]</span>"
 
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
