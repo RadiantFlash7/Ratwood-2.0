@@ -46,7 +46,7 @@
 	return ..()
 
 /datum/antagonist/dreamwalker/greet()
-	to_chat(owner.current, span_notice("I feel a rare ability awaken within me. I am someone coveted as a champion by most gods. A dreamwalker. Not merely touched by Abyssor's dream, but able to pull materia and power from his realm effortlessly. I shall bring glory to my patron. My mind frays under the influence of dream entities, but surely my resolve is stronger than theirs."))
+	to_chat(owner.current, span_notice("Abyssor slumbers. He is trapped in his endless dreaming, unable to wake. Yet we ourselves are in a dream of our own. It will cost what it may- Abyssor will be freed of his slumber, this dream of ours ample sacrifice. The only way to awaken Abyssor is to rupture this dream. A fragment of his power, Materia of the deep will suffice- the rituals necessary taxing and bloody. My mind frays under the strain; Abyssor is not alone in that deep, dark realm. Yet, my resolve is stronger than theirs. It must be."))
 	to_chat(owner.current, span_notice("I manifest a piece of ritual chalk... It seems potent. I shall forge a great weapon, one with such power it shall dwarf all others. I must find a target to begin... It should be easy enough if I focus."))
 	owner.announce_objectives()
 	..()
