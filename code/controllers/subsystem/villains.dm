@@ -5,7 +5,7 @@
 	var/antag_window_closed = FALSE
 	var/antag_optin_required = FALSE // stays FALSE if the window never opened (force-start), so everyone counts as in
 	var/list/antag_optins = list()
-	
+	var/list/antag_popup_shown = list()
 	
 /datum/controller/subsystem/gamemode/proc/is_opted_in(ckey)
 	if(!antag_optin_required)
@@ -19,8 +19,9 @@
 	antag_optin_required = TRUE
 	to_chat(world, span_boldnotice("The antagonist draw is open! Use the Villains button in the lobby to opt in. It closes when the round starts."))
 	for(var/mob/dead/new_player/P as anything in GLOB.new_player_list)
-		if(P.client && P.ready == PLAYER_READY_TO_PLAY)
-			P.VillainChoices()
+		if(P.client)
+			antag_popup_shown[P.ckey] = TRUE
+			P.AlertAntagWindow()
 
 /datum/controller/subsystem/gamemode/proc/close_antag_window()
 	if(antag_window_closed)

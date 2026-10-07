@@ -187,6 +187,8 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 
 			if(ready != tready)
 				ready = tready
+				if(ready == PLAYER_READY_TO_PLAY)
+					MaybeShowAntagPopup()
 		//if it's post initialisation and they're trying to observe we do the needful
 		
 		if(!SSticker.current_state < GAME_STATE_PREGAME && tready == PLAYER_READY_TO_OBSERVE)
@@ -887,3 +889,18 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 
 		return FALSE //This is the only case someone should actually be completely blocked from antag rolling as well
 	return TRUE
+
+
+/mob/dead/new_player/proc/MaybeShowAntagPopup()
+	if(!client || !SSgamemode.antag_window_open || SSgamemode.antag_window_closed)
+		return
+	if(SSgamemode.antag_popup_shown[ckey])
+		return
+	SSgamemode.antag_popup_shown[ckey] = TRUE
+	AlertAntagWindow()
+
+/mob/dead/new_player/proc/AlertAntagWindow()
+	if(!client)
+		return
+	SEND_SOUND(client, sound('sound/misc/thiefobj.ogg'))
+	VillainChoices()
