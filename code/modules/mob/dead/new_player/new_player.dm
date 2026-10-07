@@ -278,11 +278,37 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 		client.prefs.SetJobPreferenceLevel(J, jpval)
 		VillainChoices()
 		return
+	if(href_list["antag_optin"])
+		if(!SSgamemode.antag_window_open || SSgamemode.antag_window_closed)
+			return
+		if(text2num(href_list["antag_optin"]))
+			SSgamemode.antag_optins[ckey] = TRUE
+		else
+			SSgamemode.antag_optins -= ckey
+		VillainChoices()
+		return
 
+	if(href_list["antag_flag"])
+		if(SSticker.current_state > GAME_STATE_PREGAME)
+			return
+		var/flag = href_list["antag_flag"]
+		if(!(flag in SSgamemode.get_antag_flags()))
+			return
+		if(!(flag in SSgamemode.draw_flags) || is_banned_from(ckey, flag))
+			return
+		if(flag in client.prefs.be_special)
+			client.prefs.be_special -= flag
+		else
+			client.prefs.be_special += flag
+		VillainChoices()
+		return
 	if(href_list["manifest"])
 		ViewManifest()
 
 	if(href_list["SelectedJob"])
+		if(href_list["SelectedJob"] in GLOB.villain_positions)
+			return 
+
 		if(!SSticker?.IsRoundInProgress())
 			to_chat(usr, span_danger("The round is either not ready, or has already finished..."))
 			return

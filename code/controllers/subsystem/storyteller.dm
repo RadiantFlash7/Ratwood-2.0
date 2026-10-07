@@ -187,6 +187,7 @@ SUBSYSTEM_DEF(gamemode)
 	var/round_ends_at = 0
 	var/roundvoteend = FALSE
 	var/reb_end_time = 0
+	var/roundstart_draw_active = FALSE
 
 /datum/controller/subsystem/gamemode/Initialize(time, zlevel)
 #if defined(UNIT_TESTS) || defined(AUTOWIKI) // lazy way of doing this but idc
@@ -353,7 +354,8 @@ SUBSYSTEM_DEF(gamemode)
 		if(be_special)
 			if(!(candidate.client.prefs) || !(be_special in candidate.client.prefs.be_special))
 				continue
-
+		if(roundstart_draw_active && !is_opted_in(candidate.ckey))
+			continue
 		//if(midround_antag_pref)
 			//continue
 
