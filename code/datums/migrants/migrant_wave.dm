@@ -129,3 +129,17 @@
 	optional_roles = list(
 		/datum/migrant_role/gnoll = 3,
 	)
+
+/datum/migrant_wave/wretches
+	name = "Wretch Exodus"
+	track = MIGRANT_TRACK_SPECIAL
+	weight = 0
+	min_round_time = 300 MINUTES // never rolls naturally, same as the other antag waves
+	is_raid = TRUE
+	required_roles = list(
+		/datum/migrant_role/wretch = 1,
+	)
+	optional_roles = list(
+		/datum/migrant_role/wretch = 3,
+	)
+	greet_text = "Hunted and out of options, you slip into the realm with others of your kind."

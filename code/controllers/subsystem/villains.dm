@@ -1,3 +1,4 @@
+#define ANTAG_DEPLETED_RATIO 0.5
 /datum/controller/subsystem/gamemode
 	var/list/rolled_villain_events = list()
 	var/list/queued_villains = list()
@@ -6,7 +7,13 @@
 	var/antag_optin_required = FALSE // stays FALSE if the window never opened (force-start), so everyone counts as in
 	var/list/antag_optins = list()
 	var/list/antag_popup_shown = list()
-	
+	var/list/antag_checkpoints = list(1 HOURS, 2 HOURS)
+	var/next_antag_checkpoint = 1
+	var/antag_baseline_taken = FALSE
+	var/list/antag_baselines = list() // modifier -> alive count at baseline
+	var/list/antag_unfilled = list(0, 0, 0) // roundstart quota slots that never filled, index = ANTAG_TIER_*
+
+
 /datum/controller/subsystem/gamemode/proc/is_opted_in(ckey)
 	if(!antag_optin_required)
 		return TRUE
@@ -27,8 +34,16 @@
 	if(antag_window_closed)
 		return
 	antag_window_closed = TRUE
+	for(var/client/C as anything in GLOB.clients)
+		C << browse(null, "window=villainchoices") // round is starting, shut everyone's popup
 	roll_antag_modifiers()
-
+	var/list/slot_report = list()
+	for(var/job_title in GLOB.villain_positions)
+		var/datum/job/J = SSjob.GetJob(job_title)
+		if(J)
+			slot_report += "[job_title] [J.spawn_positions]"
+	message_admins("Villain slots: [slot_report.Join(", ")]")
+	
 /datum/controller/subsystem/gamemode/proc/count_queued_villains(job_title)
 	. = 0
 	for(var/ckey in queued_villains)
@@ -56,6 +71,15 @@
 		to_chat(player, span_boldwarning("You have been chosen for villainy as a [job_title]!"))
 		player.AttemptLateSpawn(job_title)
 	queued_villains = list()
+	addtimer(CALLBACK(src, PROC_REF(capture_antag_baseline)), 3 MINUTES) // after events and queued villains have spawned
+
+/datum/controller/subsystem/gamemode/proc/capture_antag_baseline()
+	if(antag_baseline_taken)
+		return
+	antag_baseline_taken = TRUE
+	for(var/datum/round_modifier/M as anything in active_modifiers)
+		if(M.tier)
+			antag_baselines[M] = M.count_alive()
 
 /mob/dead/new_player/proc/VillainChoices()
 	var/list/dat = list()
@@ -64,7 +88,6 @@
 	else
 		var/optin = SSgamemode.is_opted_in(ckey)
 		dat += "<b>Antagonists are being drawn.</b><br>"
-		dat += "Time left: [DisplayTimeText(max(0, SSticker.timeLeft))]<br><br>"
 		dat += "In the draw: <b>[optin ? "YES" : "NO"]</b> - <a href='byond://?src=[REF(src)];antag_optin=[optin ? 0 : 1]'>[optin ? "Opt out" : "Opt in"]</a><br><br>"
 		dat += "<b>Your antagonist roles:</b><br>"
 		SSgamemode.build_draw_roles()

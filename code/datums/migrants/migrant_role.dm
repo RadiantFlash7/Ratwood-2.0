@@ -67,3 +67,8 @@
 /datum/outfit/job/roguetown/cloak/surcoat/pre_equip(mob/living/carbon/human/H)
 	cloak = /obj/item/clothing/cloak/stabard/surcoat
 
+/datum/migrant_role/wretch
+	name = "Wretch"
+	antag_datum = /datum/antagonist/wretch
+	advclass_cat_rolls = list(CTAG_WRETCH = 20)
+

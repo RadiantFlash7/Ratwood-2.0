@@ -269,12 +269,17 @@ SUBSYSTEM_DEF(gamemode)
 			///Alert admins 1 minute before running and allow them to cancel or refund the event, once again.
 			sch_event.alerted_admins = TRUE
 			message_admins("Scheduled Event: [sch_event.event] will run in [(sch_event.start_time - world.time) / 10] seconds. (<a href='byond://?src=[REF(sch_event)];action=cancel'>CANCEL</a>) (<a href='byond://?src=[REF(sch_event)];action=refund'>REFUND</a>)")
-
+	if(SSticker.HasRoundStarted() && next_antag_checkpoint <= length(antag_checkpoints))
+		if(world.time - SSticker.round_start_time >= antag_checkpoints[next_antag_checkpoint])
+			next_antag_checkpoint++
+			INVOKE_ASYNC(src, PROC_REF(run_antag_checkpoint))
+	process_pending_antag_waves()
 	if(!halted_storyteller && next_storyteller_process <= world.time && current_storyteller)
 		// We update crew information here to adjust population scalling and event thresholds for the storyteller.
 		update_crew_infos()
 		next_storyteller_process = world.time + STORYTELLER_WAIT_TIME
 		current_storyteller.process(STORYTELLER_WAIT_TIME * 0.1)
+
 
 /// Gets the number of antagonists the antagonist injection events will stop rolling after.
 /datum/controller/subsystem/gamemode/proc/get_antag_cap()
