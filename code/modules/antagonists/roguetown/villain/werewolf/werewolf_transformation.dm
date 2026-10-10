@@ -142,7 +142,8 @@
 	W.AddSpell(new /obj/effect/proc_holder/spell/self/howl)
 	W.AddSpell(new /obj/effect/proc_holder/spell/self/claws)
 	W.AddSpell(new /obj/effect/proc_holder/spell/targeted/woundlick)
-
+	W.AddSpell(new /obj/effect/proc_holder/spell/invoked/werewolf_infect)
+	
 	ADD_TRAIT(src, TRAIT_NOSLEEP, TRAIT_GENERIC)
 	ADD_TRAIT(W, TRAIT_GRABIMMUNE, TRAIT_GENERIC) // THIS IS THE CORRECT PLACE FOR WEREWOLF TRAITS. GOD.
 	ADD_TRAIT(W, TRAIT_STRONGBITE, TRAIT_GENERIC)
@@ -203,6 +204,7 @@
 	skills?.skill_experience = WA.stored_experience.Copy()
 
 	W.RemoveSpell(new /obj/effect/proc_holder/spell/self/howl)
+	W.RemoveSpell(new /obj/effect/proc_holder/spell/invoked/werewolf_infect)
 	W.RemoveSpell(new /obj/effect/proc_holder/spell/self/claws)
 	W.RemoveSpell(new /obj/effect/proc_holder/spell/targeted/woundlick)
 	W.regenerate_icons()
