@@ -1,5 +1,12 @@
 /datum/antagonist/dreamwalker
 	name = "Dreamwalker"
+	briefing_title = "The Dreamwalker"
+	briefing_text = "Abyssor slumbers, trapped in endless dreaming, unable to wake. Yet we ourselves are caught in a dream of our own. It will cost what it may—Abyssor will be freed of his slumber, this dream of ours ample sacrifice. You are a Dreamwalker, radicalized by the world and sworn to rupture it. Seek out the Materia of the Deep, fragments of His power, and perform the taxing, bloody rituals required. Your mind will fray under the strain; Abyssor is not alone in that deep, dark realm. Yet your resolve is stronger than those entities. It must be. Use your unique abilities wisely."	
+	briefing_tips = list(
+		"Avoid the inquisition.",
+		"Look for opportunities to complete your bloody rituals.",
+		"Trust carefully- Fellow Abyssor worshippers are not as enlightened as you are."
+	)
 	roundend_category = "Dreamwalker"
 	antagpanel_category = "Dreamwalker"
 	job_rank = ROLE_DREAMWALKER
@@ -36,18 +43,26 @@
 	var/STAPER = 12
 	var/STALUC = 10
 
+	/// Ascension progress (see dreamwalker_ascension.dm)
+	var/list/rituals = list()
+	var/rituals_done = 0
+	var/ascended = FALSE
+	var/obj/structure/dreamwalker_altar/altar = null
+
 /datum/antagonist/dreamwalker/on_gain()
 	SSmapping.retainer.dreamwalkers |= owner
 	. = ..()
 	reset_stats()
+	setup_rituals()
 	// We'll set the special role later to avoid revealing dreamwalkers early!
 	//owner.special_role = name
 	greet()
 	return ..()
 
 /datum/antagonist/dreamwalker/greet()
-	to_chat(owner.current, span_notice("I feel a rare ability awaken within me. I am someone coveted as a champion by most gods. A dreamwalker. Not merely touched by Abyssor's dream, but able to pull materia and power from his realm effortlessly. I shall bring glory to my patron. My mind frays under the influence of dream entities, but surely my resolve is stronger than theirs."))
+	to_chat(owner.current, span_notice("Abyssor slumbers. He is trapped in his endless dreaming, unable to wake. Yet we ourselves are in a dream of our own. It will cost what it may- Abyssor will be freed of his slumber, this dream of ours ample sacrifice. The only way to awaken Abyssor is to rupture this dream. A fragment of his power, Materia of the deep will suffice- the rituals necessary taxing and bloody. My mind frays under the strain; Abyssor is not alone in that deep, dark realm. Yet, my resolve is stronger than theirs. It must be."))
 	to_chat(owner.current, span_notice("I manifest a piece of ritual chalk... It seems potent. I shall forge a great weapon, one with such power it shall dwarf all others. I must find a target to begin... It should be easy enough if I focus."))
+	to_chat(owner.current, span_notice("Five rites stand between Abyssor and his waking. Raise a drowned altar beneath an open sky, lay the offerings upon it, and bleed. Each rite will stir the storm further, and the realm will see it coming. The last will call the hurricane down. The world will know what I am doing, and it will come for me."))
 	owner.announce_objectives()
 	..()
 
@@ -71,6 +86,7 @@
 		body.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/jaunt)
 		body.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/dream_bind)
 		body.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/dream_trance)
+		body.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/tidal_altar)
 	body.ambushable = FALSE
 	body.AddComponent(/datum/component/dreamwalker_repair)
 	body.AddComponent(/datum/component/dreamwalker_mark)

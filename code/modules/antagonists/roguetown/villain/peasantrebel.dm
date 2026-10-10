@@ -3,6 +3,14 @@
 
 /datum/antagonist/prebel
 	name = "Peasant Rebel"
+	briefing_title = "Peasant Rebellion"
+	briefing_text = "The Tyranny of the nobility is beyond the pale. You can no longer abide the unyielding order's command. You are a peasant rebel leader! It's time to depose the current ruler."
+	briefing_tips = list(
+		"The keep can be stormed, but it will be difficult. Gather your allies and make a plan.",
+		"The duchy is often at odds with other factions in town. Use this to your advantage.",
+		"Militia weapons are remarkably effective in the hands of those who have used their tools for years. Make good use of them.",
+		"You can use a Hermes to contact outside support."
+	)
 	roundend_category = "peasant rebels"
 	antagpanel_category = "Peasant Rebellion"
 	job_rank = ROLE_PREBEL

@@ -13,7 +13,7 @@
 	var/list/pending_antag_waves = list()
 	/// Migrant waves that can answer a deficit, indexed by ANTAG_TIER_* (1 minor, 2 medium, 3 major). type = weight
 	var/list/antag_wave_pools = list(
-		list(), // minor: nothing deliverable yet
+		list(), // minor
 		list(/datum/migrant_wave/gnolls = 10, /datum/migrant_wave/assassin = 10, /datum/migrant_wave/wretches = 10),	//moderate
 		list(/datum/migrant_wave/bandit = 10),	//major
 	)

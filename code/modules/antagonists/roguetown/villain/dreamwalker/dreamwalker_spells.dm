@@ -80,6 +80,8 @@
 		to_chat(user, span_warning("[user] traces a glowing symbol in the air marking [marked_target.real_name]."), 
 							span_notice("You mark [marked_target.real_name] for pursuit."))
 
+	// Ingots pay for the rites, so the hunt speeds up as the storm grows (see dreamwalker_ascension.dm).
+	recharge_time = dreamwalker_scale_cooldown(25 MINUTES)
 	return TRUE
 
 /obj/effect/proc_holder/spell/invoked/mark_target/proc/get_valid_targets(mob/user)
